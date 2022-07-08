@@ -28,6 +28,7 @@
     padding-left: 25%;
     padding-top: 15%;
     padding-right: 15%;
+    /*margin-right: 15%;*/
     /*top: 7%;*/
     position:fixed;
     top:0;
@@ -90,12 +91,13 @@
     z-index:100;
     color: #E8E8E8;
     margin-top: 90px;
+    text-align: justify;
 }
 
-.question {
+.title {
     font-size: 40px;
 }
 
-.dijkstra {
+.description {
     font-size: 25px;
 }

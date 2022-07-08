@@ -1,0 +1,35 @@
+a {
+    display: inline-block;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    color: inherit;
+    position: relative;
+    transition: var(--transition)
+}
+
+.nav {
+    position: fixed;
+    background-color: var(--bg-primary);
+    width: 5rem;
+    height: 100vh;
+    transition: width 600ms ease;
+}
+
+.facedown-enter-done {
+
+}
+
+.resume-button {
+/*    color: var(--green);*/
+/*    background-color: transparent;*/
+/*    border: 1px solid var(--green);*/
+/*    border-radius: var(--border-radius);*/
+/*    padding: 0.75rem 1rem;*/
+/*    font-family: var(--font-mono);*/
+/*    line-height: 1;*/
+/*    text-decoration: none;*/
+/*    cursor: pointer;*/
+/*    transition: var(--transition);*/
+/*    margin-left: 15px;*/
+/*    font-size: var(--fz-xs);*/
+}
