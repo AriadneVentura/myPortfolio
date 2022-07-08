@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'DesirePro';
+    src: url(fonts/desire-pro.otf) format('opentype');
+    font-style: normal;
+}
+
+/**{*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    box-sizing: border-box;*/
+/*    font-family: 'DesirePro', sans-serif;*/
+/*}*/
+/*body{*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: left;*/
+/*    min-height: 100vh;*/
+/*    background: #545454;*/
+/*    font-size: 1rem;*/
+/*    font-weight: 400;*/
+/*    line-height: 1.5;*/
+/*    text-align: left;*/
+/*    !*colour + background colour*!*/
+/*    background-color: #545454;*/
+/*}*/
+.wrapper{
+    display: flex;
+    padding-left: 25%;
+    padding-top: 15%;
+    padding-right: 15%;
+    /*top: 7%;*/
+    position:fixed;
+    top:0;
+    z-index:100;
+}
+.wrapper .static-txt{
+    color: #E8E8E8;
+    font-size: 86px;
+    font-weight: 400;
+    /*position: relative;*/
+}
+.wrapper .dynamic-txts{
+    margin-left: 15px;
+    height: 129px;
+    line-height: 129px;
+    overflow: hidden;
+}
+.dynamic-txts li{
+    list-style: none;
+    color: #F5C9F1;
+    font-size: 86px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 9s steps(3) infinite;
+}
+@keyframes slide {
+    100%{
+        top: -387px;
+        /*129px * 3*/
+    }
+}
+.dynamic-txts li span{
+    position: inherit;
+    margin: 5px 0;
+    line-height: 129px;
+}
+.dynamic-txts li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 61%;
+    width: 100%;
+    background: #5E5E5E;
+    border-left: 1px solid #F5C9F1;
+    animation: typing 3s steps(7) infinite;
+}
+@keyframes typing {
+    40%, 60%{
+        left: calc(100% + 43px);
+    }
+    100%{
+        left: 0;
+    }
+}
+
+.intro {
+    /*display: flex;*/
+    position:fixed;
+    z-index:100;
+    color: #E8E8E8;
+    margin-top: 90px;
+}
+
+.question {
+    font-size: 40px;
+}
+
+.dijkstra {
+    font-size: 25px;
+}

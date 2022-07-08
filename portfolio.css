@@ -1,4 +1,72 @@
 @font-face {
     font-family: 'DesirePro';
-    src: url(fonts/desire-pro.ttf);
+    src: url(fonts/desire-pro.otf) format('opentype');
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    /*colour + background colour*/
+    background-color: #545454;
+}
+
+*, ::after, ::before{
+    box-sizing: border-box;
+}
+
+.App {
+    background-color: #434343;
+    display: flex;
+    flex-direction: row;
+}
+
+#content {
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#intro  {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 15%;
+    padding-top: 10%;
+    min-height: 100vh;
+}
+
+.Typist {
+    color: #E8E8E8;
+    text-align: center;
+    font-size: 78px;
+    margin-top: -30px;
+}
+
+.intro-title {
+    font-family: DesirePro, sans-serif;
+    font-size: 86px;
+}
+
+.intro-name {
+    color: #F5C9F1;
+}
+
+.Typist .Cursor {
+    color: #F5C9F1;
+    padding-left: 4px;
+    opacity: 1;
+    display: inline-block;
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
 }

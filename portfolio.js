@@ -1,7 +1,7 @@
 function positionElement(el, x, y) {
     el.style.position = 'absolute';
-    el.style.left = x + 'px';
-    el.style.top = y + 'px';
+    el.style.left = x + 'vw';
+    el.style.top = y + 'vh';
 }
 
 const blue_b = document.getElementById('blue_box');
