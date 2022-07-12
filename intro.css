@@ -4,34 +4,12 @@
     font-style: normal;
 }
 
-/**{*/
-/*    margin: 0;*/
-/*    padding: 0;*/
-/*    box-sizing: border-box;*/
-/*    font-family: 'DesirePro', sans-serif;*/
-/*}*/
-/*body{*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    justify-content: left;*/
-/*    min-height: 100vh;*/
-/*    background: #545454;*/
-/*    font-size: 1rem;*/
-/*    font-weight: 400;*/
-/*    line-height: 1.5;*/
-/*    text-align: left;*/
-/*    !*colour + background colour*!*/
-/*    background-color: #545454;*/
-/*}*/
+
 .wrapper{
     display: flex;
-    padding-left: 25%;
-    padding-top: 15%;
-    padding-right: 15%;
-    /*margin-right: 15%;*/
-    /*top: 7%;*/
+    left: 25%;
+    top: 15%;
     position:fixed;
-    top:0;
     z-index:100;
 }
 .wrapper .static-txt{
@@ -50,7 +28,7 @@
     list-style: none;
     color: #F5C9F1;
     font-size: 86px;
-    font-weight: 500;
+    font-weight: 400;
     position: relative;
     top: 0;
     animation: slide 9s steps(3) infinite;
@@ -91,7 +69,6 @@
     z-index:100;
     color: #E8E8E8;
     margin-top: 90px;
-    text-align: justify;
 }
 
 .title {
@@ -99,5 +76,6 @@
 }
 
 .description {
-    font-size: 25px;
+    font-size: 22px;
+    font-family: Garamond;
 }
