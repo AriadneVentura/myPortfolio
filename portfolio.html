@@ -5,47 +5,64 @@
         <link rel="stylesheet" href="intro.css">
         <link rel="stylesheet" href="background.css">
         <link rel="stylesheet" href="nav.css">
-        <script src="nav.js"></script>
+        <link rel="stylesheet" href="zpawn.css">
     </head>
-    <body>
-        <div id="blue_box"></div>
-        <div id="pink_box"></div>
-        <div id="grey_box"></div>
 
-        <nav>
-            <div class="nav">
-                <ol>
-                    <div class="navlist";>
-                        <img src="fonts/aaicon2.png" class="aaicon">
-                    </div>
-                    <li class="navlist"><a href="#spawn">spawn</a></li>
-                    <li class="navlist"><a href=".readme">readme</a></li>
-                    <li class="navlist"><a href="#code-files">code-files</a></li>
-                    <li class="navlist"><a href="#experience">experience</a></li>
-                    <div class="navlist" style="transition-delay: 200ms;">
-                        <a class="resume-button" href="fonts/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-                    </div>
-                </ol>
-<!--                <button class="button-51" role="button">Button 51</button>-->
-            </div>
-        </nav>
+    <div id="blue_box"></div>
+    <div id="pink_box"></div>
+    <div id="grey_box"></div>
+
+    <nav>
+        <div class="nav">
+            <ol>
+                <div class="navlist";>
+                    <img src="fonts/aaicon2.png" class="aaicon" target="_blank" rel="noopener noreferrer" onclick="topFunction()">
+                </div>
+                <li class="navlist"><a href="#spawn">spawn</a></li>
+                <li class="navlist"><a href="#code-files">code-files</a></li>
+                <li class="navlist"><a href="#experience">experience</a></li>
+                <li class="navlist"><a href=".readme">readme</a></li>
+                <div class="navlist" style="transition-delay: 200ms;">
+                    <a class="resume-button" href="fonts/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+                </div>
+            </ol>
+        </div>
+    </nav>
+
+    <body>
+<!--        <script>-->
+<!--            function topFunction() {-->
+<!--                document.body.scrollTop = 0;-->
+<!--                document.documentElement.scrollTop = 0;-->
+<!--            }-->
+<!--        </script>-->
 
         <div class="wrapper">
+<!--            <div class="display">-->
             <div class="static-txt">Hello, I'm</div>
             <ul class="dynamic-txts">
-                <li><span>Ari</span></li>
-                <li><span>Endaira</span></li>
+                <li><span>Ari.</span></li>
+                <li><span>Endaira.</span></li>
                 <li><span>Ariadne.</span></li>
             </ul>
-            <div class="intro">
-                <br>
-                <span class="title">Bit of hello one side bit of world on the other </span>
-                <span class="description"><br>I'm a software engineering student based in Melbourne. I’m interested in full-stack development, design, artificial intelligence and drawing (sometimes).</span>
-            </div>
         </div>
+        <div class="intro">
+            <br>
+            <span class="title"> Can a machine think? Does a submarine swim? - Edsger Dijkstra </span>
+            <span class="description"><br>I'm a software engineering student based in Melbourne. I’m interested in full-stack development, design, artificial intelligence and drawing (sometimes).</span>
+        </div>
+<!--        </div>-->
 
-
-        <div class="readme">
+        <div class="zpawn">
+            <h2 class="numbered-heading">Spawn</h2>
+            <div class= "about">
+                <p>Hello! I'm Ariadne, and I like to code things, play games, watch movies/shows and draw like once a year.</p>
+                <p> <br /> </p>
+                <p>My earliest memory with technology was playing RuneScape when I was 7 with a friend from primary school. Later on, in 2014 I had a slight obsession with Minecraft, I remember locating the appdata folder with %appdata% and thinking it was super cool when downloading custom MODs for Minecraft. From that point onwards, I always made an effort to mold my Minecraft worlds with mods, resource packs and buildings to make it very exciting and probably, definitely overwhelming.</p>
+                <p> <br /> </p>
+                <p>Fast forward 7 years, my professional journey with technology began in 2021, when I started my Software Engineering degree at RMIT university. I have just recently finished second year with a GPA of 3.2, and I’m looking forward to third year when I’ll be an intern!</p>
+                </br>
+            </div>
         </div>
     </body>
 </html>

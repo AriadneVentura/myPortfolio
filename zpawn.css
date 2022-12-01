@@ -1,0 +1,57 @@
+/*ol {*/
+
+/*}*/
+
+/*li {*/
+/*    list-style-type: decimal-leading-zero;*/
+/*    list-style-position: inside;*/
+
+/*    color: #F5C9F1;*/
+/*    font-size: 18px;*/
+/*    font-family: Garamond;*/
+
+/*    position: relative;*/
+/*    left: 30%;*/
+/*}*/
+
+.numbered-heading {
+    /*display: flex;*/
+    /*-moz-box-align: center;*/
+    /*align-items: center;*/
+    /*position: relative;*/
+    /*margin: 10px 0px 40px;*/
+    /*width: 100%;*/
+
+    /*color: #F5C9F1;*/
+    display: flex;
+    left: 0%;
+    top: -20%;
+    position:absolute;
+    z-index:100;
+    font-size: 40px;
+    font-weight: 200;
+    list-style-type: decimal-leading-zero;
+}
+
+.zpawn {
+
+    /*max-width: 900px;*/
+    /*margin: 0px auto;*/
+    /*padding: 100px 0px;*/
+    /*box-sizing: inherit;*/
+
+    display: flex;
+    left: 25%;
+    top: 77%;
+    position:absolute;
+    z-index:100;
+    color: #E8E8E8;
+    font-size: 22px;
+
+    max-width: 60%;
+}
+
+.about p{
+    font-size: 22px;
+    font-family: "Roboto Thin"; !important;
+}

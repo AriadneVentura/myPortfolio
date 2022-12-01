@@ -1,17 +1,14 @@
-@font-face {
-    font-family: 'DesirePro';
-    src: url(fonts/desire-pro.otf) format('opentype');
-    font-style: normal;
-}
 
 
 .wrapper{
-    display: flex;
     left: 25%;
     top: 15%;
-    position:fixed;
     z-index:100;
+
+    position:absolute;
+    display: flex;
 }
+
 .wrapper .static-txt{
     color: #E8E8E8;
     font-size: 86px;
@@ -64,18 +61,22 @@
 }
 
 .intro {
-    /*display: flex;*/
-    position:fixed;
     z-index:100;
     color: #E8E8E8;
     margin-top: 90px;
+    position: absolute;
+    left: 25%;
+    top: 15%;
+    max-width: 60%;
 }
 
 .title {
     font-size: 40px;
+
 }
 
 .description {
     font-size: 22px;
-    font-family: Garamond;
+    font-family: "Roboto Thin";
+
 }
