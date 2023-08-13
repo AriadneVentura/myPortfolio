@@ -1,31 +1,5 @@
-/*ol {*/
-
-/*}*/
-
-/*li {*/
-/*    list-style-type: decimal-leading-zero;*/
-/*    list-style-position: inside;*/
-
-/*    color: #F5C9F1;*/
-/*    font-size: 18px;*/
-/*    font-family: Garamond;*/
-
-/*    position: relative;*/
-/*    left: 30%;*/
-/*}*/
-
 .numbered-heading {
-    /*display: flex;*/
-    /*-moz-box-align: center;*/
-    /*align-items: center;*/
-    /*position: relative;*/
-    /*margin: 10px 0px 40px;*/
-    /*width: 100%;*/
-
-    /*color: #F5C9F1;*/
-    display: flex;
-    left: 0%;
-    top: -20%;
+    top: -17%;
     position:absolute;
     z-index:100;
     font-size: 40px;
@@ -34,24 +8,41 @@
 }
 
 .zpawn {
-
-    /*max-width: 900px;*/
-    /*margin: 0px auto;*/
-    /*padding: 100px 0px;*/
-    /*box-sizing: inherit;*/
-
     display: flex;
-    left: 25%;
-    top: 77%;
+    flex-direction: row;
+    left: 27vw;
+    top: 32vw;
     position:absolute;
-    z-index:100;
-    color: #E8E8E8;
+    color: #bbbbbb;
     font-size: 22px;
+}
 
-    max-width: 60%;
+.zpawn h2 {
+    color: #E8E8E8;
+}
+
+.zpawn h2::after {
+    content: "";
+    display: block;
+    width: 400px;
+    margin-top: -10px;
+    height: 1px;
+    margin-left: 100px;
+    background-color: #a1a1a1;
 }
 
 .about p{
     font-size: 22px;
-    font-family: "Roboto Thin"; !important;
+    font-family: "NTR",sans-serif;
+    max-width: 50%;
+}
+
+.zpawn img {
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 6px 13px 23px -5px rgba(0,0,0,.46);
+    position: relative;
+    left: -20vw;
+    top: -1vw;
 }

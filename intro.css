@@ -1,23 +1,23 @@
 
 
 .wrapper{
-    left: 25%;
-    top: 15%;
+    left: 27vw;
+    top: 30vh;
     z-index:100;
 
-    position:absolute;
+    position: absolute;
     display: flex;
 }
 
 .wrapper .static-txt{
     color: #E8E8E8;
     font-size: 86px;
-    font-weight: 400;
-    /*position: relative;*/
 }
 .wrapper .dynamic-txts{
     margin-left: 15px;
-    height: 129px;
+    height: 120px;
+    /* width here allows for the space to be shown */
+    width: 250px;
     line-height: 129px;
     overflow: hidden;
 }
@@ -25,39 +25,44 @@
     list-style: none;
     color: #F5C9F1;
     font-size: 86px;
-    font-weight: 400;
     position: relative;
     top: 0;
-    animation: slide 9s steps(3) infinite;
+    animation: slide 8s steps(2) infinite;
+    /* 4 * 2 = 8 */
 }
 @keyframes slide {
     100%{
-        top: -387px;
+        top: -258px;
         /*129px * 3*/
     }
 }
 .dynamic-txts li span{
     position: inherit;
-    margin: 5px 0;
     line-height: 129px;
 }
 .dynamic-txts li span::after{
     content: "";
     position: absolute;
     left: 0;
-    height: 61%;
+    top: 6vh;
+    height: 50%;
     width: 100%;
+    /*background: white;*/
     background: #5E5E5E;
-    border-left: 1px solid #F5C9F1;
-    animation: typing 3s steps(7) infinite;
+    border-left: 5px solid #F5C9F1;
+    animation:
+            typing 4s steps(9) infinite,
+            cursor .6s infinite alternate;
 }
 @keyframes typing {
     40%, 60%{
-        left: calc(100% + 43px);
+        /* + 40px is the space after the fullstop*/
+        left: calc(100% + 40px);
     }
-    100%{
-        left: 0;
-    }
+}
+
+@keyframes cursor {
+    50% { border-color: transparent }
 }
 
 .intro {
@@ -65,8 +70,8 @@
     color: #E8E8E8;
     margin-top: 90px;
     position: absolute;
-    left: 25%;
-    top: 15%;
+    left: 27vw;
+    top: 30vh;
     max-width: 60%;
 }
 
@@ -77,6 +82,7 @@
 
 .description {
     font-size: 22px;
-    font-family: "Roboto Thin";
+    font-family: "NTR",sans-serif;
+    color: #c7c7c7;
 
 }

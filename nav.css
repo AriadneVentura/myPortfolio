@@ -1,3 +1,7 @@
+/*nav {*/
+/*    z-index: 3;*/
+/*}*/
+
 ol {
     list-style-type: decimal-leading-zero;
     list-style-position: inside;
@@ -10,7 +14,7 @@ ol {
     /*left: 30%;*/
 
     font-size: 10px;
-    background-color: #41414180;
+    background-color: #41414190;
 
     transition: 150ms;
 }
@@ -19,10 +23,9 @@ ol li {
     color: #F5C9F1;
     font-size: 18px;
     /*font-family: Garamond;*/
-    font-family: "Roboto Thin";
-
+    font-family: "Source Code Pro";
     position: relative;
-    left: 30%;
+    left: 37%;
 }
 
 .navlist {
@@ -35,7 +38,7 @@ ol li {
     color: #E8E8E8;
     /*font-family: Garamond;*/
     font-family: "Roboto Thin";
-    font-size: 26px;
+    font-size: 18px;
 }
 
 .navlist a:hover {
@@ -48,9 +51,9 @@ ol li {
     height: 40px;
 
     cursor: pointer;
-    position: relative;
-    left: 100%;
-
+    position: absolute;
+    left: 5%;
+    top: 20%;
     transition: 50ms;
 }
 
@@ -64,21 +67,59 @@ ol li {
     border: 1.5px solid #F5C9F1;
     border-radius: 1px;
     padding: 0.1rem 0.5rem;
-    /*font-family: Garamond;*/
-    font-family: "Roboto Thin";
 
 
     cursor: pointer;
     transition: 100ms;
 
     margin-left: 15px;
-    font-size: 25px;
 
-    position: relative;
-    left: -435%;
+    position: absolute;
+    left: 92vw;
+    top: 20%;
+
 }
 
 .resume-button:hover {
     /*the color is #F5C9F1 the 20 at the end refers to trasparency*/
     background-color: #F5C9F120;
 }
+
+/*@media only screen and (max-width: 500px) {*/
+/*    ol {*/
+/*        display: none;*/
+/*    }*/
+
+/*    ol li {*/
+/*        display: none;*/
+/*    }*/
+
+/*    .navlist {*/
+/*        display: none;*/
+/*    }*/
+
+/*    .navlist a {*/
+/*        display: none;*/
+/*    }*/
+
+/*    .navlist a:hover {*/
+/*        display: none;*/
+/*    }*/
+
+/*    .navlist .aaicon {*/
+/*        display: none;*/
+/*    }*/
+
+/*    .navlist .aaicon:hover {*/
+/*        display: none;*/
+/*    }*/
+
+/*    .resume-button {*/
+/*        display: none;*/
+/*    }*/
+
+/*    .resume-button:hover {*/
+/*        display: none;*/
+/*    }*/
+
+/*}*/
