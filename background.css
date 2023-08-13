@@ -49,24 +49,24 @@ body{
     width: 70%;
     height: 90%;
     left: 20%;
-    top: 65%;
+    top: 65vh;
     border: 20px solid #F5C9F1;
     float: left;
     background-color: #5E5E5E;
 }
 
-/*#grey_box {*/
-/*    !*position: fixed;*!*/
-/*    position:absolute;*/
+#grey_box {
+    /*position: fixed;*/
+    position:absolute;
 
-/*    width: 80%;*/
-/*    height: 55%;*/
-/*    left: 55%;*/
-/*    top: 80%;*/
-/*    border: 20px solid #434343;*/
-/*    float: left;*/
-/*    background-color: #5E5E5E;*/
-/*}*/
+    width: 60%;
+    height: 75%;
+    left: 25%;
+    top: 160vh;
+    border: 20px solid #434343;
+    float: left;
+    background-color: #5E5E5E;
+}
 
 section {
     top: 20vh;

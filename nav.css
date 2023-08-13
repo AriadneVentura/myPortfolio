@@ -7,7 +7,7 @@ ol {
     list-style-position: inside;
     /*list-style-type: none;*/
     /*padding: 20px;*/
-    position: absolute;
+    position: fixed;
     top: 0%;
 
     width: 100% !important;
@@ -17,15 +17,17 @@ ol {
     background-color: #41414190;
 
     transition: 150ms;
+    z-index: 1;
 }
 
 ol li {
     color: #F5C9F1;
     font-size: 18px;
     /*font-family: Garamond;*/
-    font-family: "Source Code Pro";
+    /*font-family: "Source Code Pro";*/
     position: relative;
     left: 37%;
+    font-family: "NTR",sans-serif;
 }
 
 .navlist {
@@ -37,7 +39,7 @@ ol li {
     text-decoration: none;
     color: #E8E8E8;
     /*font-family: Garamond;*/
-    font-family: "Roboto Thin";
+    font-family: "NTR",sans-serif;
     font-size: 18px;
 }
 

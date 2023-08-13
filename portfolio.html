@@ -6,23 +6,25 @@
         <link rel="stylesheet" href="background.css">
         <link rel="stylesheet" href="nav.css">
         <link rel="stylesheet" href="zpawn.css">
+        <link rel="stylesheet" href="experience.css">
     </head>
 
     <div id="blue_box"></div>
     <div id="pink_box"></div>
+    <div id="grey_box"></div>
 
     <nav>
         <div class="nav">
             <ol>
                 <div class="navlist">
-                    <a href="portfolio.html" rel="noopener noreferrer" target="_blank">
-                        <img src="fonts/aaicon2.png" class="aaicon">
+                    <a href="#top">
+                        <img src="thingies/aaicon2.png" class="aaicon">
                     </a>
-                <li class="navlist"><a href="#spawn">spawn</a></li>
-                <li class="navlist"><a href="#code-files">code-files</a></li>
+                <li class="navlist"><a href="#zpawn">spawn</a></li>
                 <li class="navlist"><a href="#experience">experience</a></li>
+                <li class="navlist"><a href="#code-files">code-files</a></li>
                 <div class="navlist" style="transition-delay: 200ms;">
-                    <a class="resume-button" href="fonts/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+                    <a class="resume-button" href="thingies/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
                 </div>
                 </div>
             </ol>
@@ -30,7 +32,7 @@
     </nav>
 
     <body>
-        <div class="wrapper">
+        <div id="wrapper">
             <div class="static-txt">Hello, I'm</div>
             <ul class="dynamic-txts">
                 <li><span>Ariadne.</span></li>
@@ -46,8 +48,9 @@
             </span>
         </div>
 
+        <div id="here"></div>
         <section class="container reveal fade">
-            <div class="zpawn">
+            <div id="zpawn">
                 <div class= "about">
                     <h2 class="numbered-heading">. /spawn</h2>
                     <p>
@@ -67,9 +70,42 @@
                     </p>
                 </div>
                 <div class="about-image">
-                    <img src="img_1.png">
+                    <img src="thingies/img_1.png">
                 </div>
             </div>
+        </section>
+
+        <section class="container reveal fade">
+            <div id="experience">
+                <h2 class="numbered-heading">. /experience</h2>
+                <div class="content">
+                    <h3>Intern Software Developer »
+                        <a href="https://www.leidos.com/company/global/australia" target="_blank">Leidos</a>
+                    </h3>
+                    <h5>FEBRUARY 2023 - PRESENT</h5>
+                    <ul>
+                        <li>
+                            Collaborate with senior engineers, experienced developers and product management adhering to
+                            industry best practises in regard to the software creation process. This includes practising agile
+                            development with a Scrum framework, good coding standards, a two-step reviewer process, robust
+                            testing and continuous integration.
+                        </li>
+                        <li>
+                            Deliver high-quality, efficient and robust production code using both popular and upcoming tools to
+                            iteratively build web experiences for hundreds of users.
+                        </li>
+                    </ul>
+                    <ul class="tools">
+                        <li>React</li>
+                        <li>TypeScript</li>
+                        <li>HTML/CSS</li>
+                        <li>Java</li>
+                        <li>Kotlin</li>
+                        <li>Rust</li>
+                    </ul>
+                </div>
+            </div>
+
         </section>
     </body>
 

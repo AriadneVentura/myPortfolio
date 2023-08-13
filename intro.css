@@ -1,6 +1,4 @@
-
-
-.wrapper{
+#wrapper{
     left: 27vw;
     top: 30vh;
     z-index:100;
@@ -9,11 +7,11 @@
     display: flex;
 }
 
-.wrapper .static-txt{
+#wrapper .static-txt{
     color: #E8E8E8;
     font-size: 86px;
 }
-.wrapper .dynamic-txts{
+#wrapper .dynamic-txts{
     margin-left: 15px;
     height: 120px;
     /* width here allows for the space to be shown */
@@ -47,7 +45,6 @@
     top: 6vh;
     height: 50%;
     width: 100%;
-    /*background: white;*/
     background: #5E5E5E;
     border-left: 5px solid #F5C9F1;
     animation:

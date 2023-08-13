@@ -1,33 +1,31 @@
 .numbered-heading {
-    top: -17%;
     position:absolute;
-    z-index:100;
     font-size: 40px;
-    font-weight: 200;
     list-style-type: decimal-leading-zero;
+    color: #E8E8E8;
 }
 
-.zpawn {
+#zpawn {
     display: flex;
     flex-direction: row;
     left: 27vw;
-    top: 32vw;
+    top: 65vh;
     position:absolute;
     color: #bbbbbb;
     font-size: 22px;
 }
 
-.zpawn h2 {
-    color: #E8E8E8;
+#zpawn h2 {
+    top: -17%;
 }
 
-.zpawn h2::after {
+#zpawn h2::after {
     content: "";
     display: block;
     width: 400px;
     margin-top: -10px;
     height: 1px;
-    margin-left: 100px;
+    margin-left: 110px;
     background-color: #a1a1a1;
 }
 
@@ -37,7 +35,7 @@
     max-width: 50%;
 }
 
-.zpawn img {
+#zpawn img {
     max-width: 350px;
     height: auto;
     border-radius: 10px;
