@@ -19,13 +19,13 @@
     line-height: 129px;
     overflow: hidden;
 }
-.dynamic-txts li{
+#lol {
     list-style: none;
     color: #F5C9F1;
     font-size: 86px;
     position: relative;
     top: 0;
-    animation: slide 8s steps(2) infinite;
+    /*animation: slide 8s steps(2) infinite;*/
     /* 4 * 2 = 8 */
 }
 @keyframes slide {
@@ -38,25 +38,27 @@
     position: inherit;
     line-height: 129px;
 }
-.dynamic-txts li span::after{
+
+/*  USE REM FOR FONTS */
+
+#lol::after{
     content: "";
-    position: absolute;
-    left: 0;
-    top: 6vh;
-    height: 50%;
-    width: 100%;
+    position: relative;
+    /*left: 0;*/
+    /*top: 6vh;*/
+    top: -16px;
+    /*height: 86px;*/
+    /*width: 100%;*/
     background: #5E5E5E;
     border-left: 5px solid #F5C9F1;
-    animation:
-            typing 4s steps(9) infinite,
-            cursor .6s infinite alternate;
+    animation: cursor .6s infinite alternate;
 }
-@keyframes typing {
-    40%, 60%{
-        /* + 40px is the space after the fullstop*/
-        left: calc(100% + 40px);
-    }
-}
+/*@keyframes typing {*/
+/*    40%, 60%{*/
+/*        !* + 40px is the space after the fullstop*!*/
+/*        left: calc(100% + 40px);*/
+/*    }*/
+/*}*/
 
 @keyframes cursor {
     50% { border-color: transparent }
