@@ -1,49 +1,56 @@
-/*nav {*/
-/*    z-index: 3;*/
-/*}*/
+nav {
+    display: block;
+    position: fixed;
+    top: 35vh;
+    left: 5vw;
+    font-size: 5rem;
+    z-index: 1;
+}
 
 ol {
-    list-style-type: decimal-leading-zero;
-    list-style-position: inside;
-    /*list-style-type: none;*/
-    /*padding: 20px;*/
-    position: fixed;
-    top: 0%;
+    /*list-style-type: decimal-leading-zero;*/
+    /*list-style-position: inside;*/
 
-    width: 100% !important;
-    /*left: 30%;*/
+    /*width: 100% !important;*/
+    /*background-color: #41414190;*/
 
-    font-size: 10px;
-    background-color: #41414190;
-
-    transition: 150ms;
+    /*transition: 1000ms;*/
+    list-style: none;
     z-index: 1;
 }
 
 ol li {
     color: #F5C9F1;
     font-size: 18px;
-    /*font-family: Garamond;*/
-    /*font-family: "Source Code Pro";*/
-    position: relative;
-    left: 37%;
     font-family: "NTR",sans-serif;
+    padding-top: 20px;
 }
 
-.navlist {
-    float: left;
-    padding: 10px;
+.border {
+    content: "";
+    display: inline-block;
+    margin-right: 10px;
+    height: 2px;
+    width: 2rem;
+    color: #E8E8E8;
+    background-color: #a1a1a1;
 }
 
-.navlist a {
+.border .active {
+    width: 4rem;
+    color: #F5C9F1;
+}
+
+.words {
     text-decoration: none;
     color: #E8E8E8;
-    /*font-family: Garamond;*/
     font-family: "NTR",sans-serif;
     font-size: 18px;
+    letter-spacing: .05em;
 }
 
-.navlist a:hover {
+.words .active {
+    font-size: 15px;
     color: #F5C9F1;
 }
 
@@ -86,42 +93,3 @@ ol li {
     /*the color is #F5C9F1 the 20 at the end refers to trasparency*/
     background-color: #F5C9F120;
 }
-
-/*@media only screen and (max-width: 500px) {*/
-/*    ol {*/
-/*        display: none;*/
-/*    }*/
-
-/*    ol li {*/
-/*        display: none;*/
-/*    }*/
-
-/*    .navlist {*/
-/*        display: none;*/
-/*    }*/
-
-/*    .navlist a {*/
-/*        display: none;*/
-/*    }*/
-
-/*    .navlist a:hover {*/
-/*        display: none;*/
-/*    }*/
-
-/*    .navlist .aaicon {*/
-/*        display: none;*/
-/*    }*/
-
-/*    .navlist .aaicon:hover {*/
-/*        display: none;*/
-/*    }*/
-
-/*    .resume-button {*/
-/*        display: none;*/
-/*    }*/
-
-/*    .resume-button:hover {*/
-/*        display: none;*/
-/*    }*/
-
-/*}*/

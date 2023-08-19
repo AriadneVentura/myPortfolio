@@ -24,8 +24,8 @@ const typing = () => {
     let charIdx = 0
     let direction = 1
     const elem = document.getElementById("lol")
-    const max = 550;
-    const min = 100;
+    const max = 700;
+    const min = 0;
 
 
     const handler = () => {
@@ -54,4 +54,27 @@ const typing = () => {
 
     handler();
 }
+
+const activeIngredients = () => {
+    const sections = document.querySelectorAll("section");
+    const navLi = document.querySelectorAll("nav ol li");
+    window.onscroll = () => {
+        let current = "";
+
+        sections.forEach((section) => {
+            const sectionTop = section.offsetTop;
+            if (pageYOffset >= sectionTop - 60) {
+                current = section.getAttribute("id"); }
+        });
+
+        navLi.forEach((li) => {
+            li.classList.remove("active");
+            if (li.classList.contains(current)) {
+                li.classList.add("active");
+            }
+        });
+    };
+}
+
+
 

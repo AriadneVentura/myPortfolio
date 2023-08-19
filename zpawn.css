@@ -1,6 +1,6 @@
 .numbered-heading {
     position:absolute;
-    font-size: 40px;
+    font-size: 2.5rem;
     list-style-type: decimal-leading-zero;
     color: #E8E8E8;
 }
@@ -8,7 +8,7 @@
 #zpawn {
     display: flex;
     flex-direction: row;
-    left: 27vw;
+    left: 35vw;
     top: 65vh;
     position:absolute;
     color: #bbbbbb;
@@ -30,17 +30,30 @@
 }
 
 .about p{
-    font-size: 22px;
+    font-size: 1.3rem;
     font-family: "NTR",sans-serif;
-    max-width: 50%;
+    max-width: 60%;
 }
 
 #zpawn img {
-    max-width: 350px;
+    max-width: 18vw;
     height: auto;
     border-radius: 10px;
     box-shadow: 6px 13px 23px -5px rgba(0,0,0,.46);
     position: relative;
-    left: -20vw;
-    top: -1vw;
+    left: -13vw;
+    top: -2vw;
+}
+
+#zpawn .logos img{
+    max-width: 30px;
+    height: auto;
+    margin-right: 10px;
+}
+
+#zpawn .about-image .logos {
+    display: flex;
+    flex-direction: row;
+    margin-left: 6vw;
+    padding-bottom: 20px;
 }

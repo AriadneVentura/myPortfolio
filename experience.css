@@ -27,13 +27,13 @@
 
 .content h3 {
     margin: 15px 0 0 0;
-    font-size: 30px;
+    font-size: 2.5rem;
     color: #E8E8E8;
 }
 .content h3 a {
     text-decoration: none;
     color: #c7adfc;
-    font-size: 35px;
+    font-size: 2.6rem;
 }
 
 .content h3 a:hover {
@@ -41,15 +41,15 @@
 }
 
 .content h5 {
-    font-size: 15px;
+    font-size: 1rem;
     font-family: "NTR",sans-serif;
     margin-bottom: 10px;
 }
 
 .content li {
-    font-size: 22px;
+    font-size: 1.3rem;
     font-family: "NTR",sans-serif;
-    max-width: 60%;
+    max-width: 50%;
     margin-left: 40px;
     list-style-type: circle;
     margin-bottom: 15px;
