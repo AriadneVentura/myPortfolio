@@ -5,12 +5,15 @@
     color: #E8E8E8;
 }
 
+#spawn {
+    min-height: 90vh;
+}
+
 .zpawn {
     display: flex;
     flex-direction: row;
     left: 35vw;
     top: 28vh;
-    /*top: 65vh;*/
     position:absolute;
     color: #bbbbbb;
     font-size: 22px;

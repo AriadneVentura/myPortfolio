@@ -1,7 +1,11 @@
+#experience {
+    min-height: 80vh;
+}
+
 .expert {
     left: 35vw;
     /*bottom: 33vh;*/
-    top: 50vh;
+    top: 20vh;
     position:absolute;
     color: #bbbbbb;
     font-size: 22px;
@@ -89,7 +93,7 @@
 @media only screen and (min-device-width: 1200px)  and (max-width: 1600px) {
     .expert {
         left: 34vw;
-        top: 49vh;
+        top: 23vh;
     }
 
     .content h3 {

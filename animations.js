@@ -71,7 +71,8 @@ const activeIngredients = () => {
 
         navLi.forEach((li) => {
             li.classList.remove("active");
-            if (li.attributes === current) {
+            console.log(li.getAttribute("data-link"))
+            if (li.getAttribute("data-link") === current) {
                 li.classList.add("active");
             }
         });
