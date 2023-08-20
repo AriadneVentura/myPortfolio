@@ -1,4 +1,4 @@
-#experience {
+.expert {
     left: 35vw;
     /*bottom: 33vh;*/
     top: 50vh;
@@ -11,12 +11,12 @@
 /*    top: 20vh;*/
 /*}*/
 
-#experience h2 {
+.expert h2 {
     top: -17%;
     position: unset;
 }
 
-#experience h2::after {
+.expert h2::after {
     content: "";
     display: block;
     width: 35vw;
@@ -87,7 +87,7 @@
 
 /*laptop screen*/
 @media only screen and (min-device-width: 1200px)  and (max-width: 1600px) {
-    #experience {
+    .expert {
         left: 34vw;
         top: 49vh;
     }
@@ -106,7 +106,7 @@
         margin-left: 20px;
     }
 
-    #experience h2::after {
+    .expert h2::after {
         /*width: 35vw;*/
         margin-top: -20px;
     }

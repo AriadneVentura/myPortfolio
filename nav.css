@@ -29,7 +29,7 @@ nav .navlist .links li .border {
     display: inline-block;
     margin-right: 10px;
     height: 2px;
-    width: 1rem;
+    width: 2rem;
     background-color: #a1a1a1;
 }
 
@@ -42,13 +42,16 @@ nav .navlist .links li .words {
 }
 
 nav .navlist .links li.active .border {
-    width: 2rem;
+    width: 4rem;
     background-color: #F5C9F1;
+    transition-duration: .20s;
+
 }
 
 nav .navlist .links li:hover .border {
-    width: 2rem;
+    width: 4rem;
     background-color: #F5C9F1;
+    transition-duration: .20s;
 }
 
 nav .navlist .links li.active .words {
@@ -70,7 +73,8 @@ nav .navlist .links li:hover .words {
     position: absolute;
     bottom: 13vh;
     transition: 50ms;
-    margin-bottom: 45px;
+    margin-bottom: 25px;
+    left: -6px;
 }
 
 .navlist .aaicon:hover {
@@ -98,4 +102,24 @@ nav .navlist .links li:hover .words {
 .resume-button:hover {
     /*the color is #F5C9F1 the 20 at the end refers to trasparency*/
     background-color: #F5C9F120;
+}
+
+
+/*laptop screen*/
+@media only screen and (min-device-width: 1200px)  and (max-width: 1600px) {
+    .navlist .aaicon {
+        margin-bottom: 45px;
+    }
+
+    nav .navlist .links li .border {
+        width: 1rem;
+    }
+
+    nav .navlist .links li.active .border {
+        width: 2rem;
+    }
+
+    nav .navlist .links li:hover .border {
+        width: 2rem;
+    }
 }
