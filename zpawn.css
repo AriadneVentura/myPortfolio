@@ -23,7 +23,7 @@
 #zpawn h2::after {
     content: "";
     display: block;
-    width: 400px;
+    width: 25vw;
     margin-top: -10px;
     height: 1px;
     margin-left: 110px;
@@ -57,4 +57,21 @@
     flex-direction: row;
     margin-left: 6vw;
     padding-bottom: 20px;
+}
+
+/*laptop screen*/
+@media only screen and (min-device-width: 1200px)  and (max-width: 1600px) {
+    #zpawn {
+        left: 34vw;
+        top: 27vh;
+    }
+
+    .about p {
+        font-size: 1.1rem;
+    }
+
+    #zpawn h2::after {
+        width: 24vw;
+        margin-top: -20px;
+    }
 }

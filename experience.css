@@ -19,7 +19,7 @@
 #experience h2::after {
     content: "";
     display: block;
-    width: 580px;
+    width: 35vw;
     margin-top: -10px;
     height: 1px;
     margin-left: 170px;
@@ -64,7 +64,7 @@
 }
 
 .technologies {
-    margin
+    margin-top: 20px;
 }
 
 .tools li {
@@ -83,5 +83,24 @@
 
     background-color: #404044;
     color: #F5C9F1;
+}
+
+/*laptop screen*/
+@media only screen and (min-device-width: 1200px)  and (max-width: 1600px) {
+    #experience {
+        left: 34vw;
+        top: 49vh;
+    }
+
+    .content li {
+        font-size: 1.1rem;
+        max-width: 70%;
+        margin-left: 20px;
+    }
+
+    #experience h2::after {
+        /*width: 35vw;*/
+        margin-top: -20px;
+    }
 }
 

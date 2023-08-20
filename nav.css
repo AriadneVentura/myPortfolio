@@ -6,7 +6,7 @@ nav {
     z-index: 1;
 }
 
-ol {
+nav .navlist {
     /*list-style-type: decimal-leading-zero;*/
     /*list-style-position: inside;*/
 
@@ -18,29 +18,22 @@ ol {
     z-index: 1;
 }
 
-ol li {
-    color: #F5C9F1;
+nav .navlist .links li {
     font-size: 18px;
     font-family: "NTR",sans-serif;
     padding-top: 20px;
 }
 
-.border {
+nav .navlist .links li .border {
     content: "";
     display: inline-block;
     margin-right: 10px;
     height: 2px;
     width: 1rem;
-    color: #E8E8E8;
     background-color: #a1a1a1;
 }
 
-.border .active {
-    width: 2rem;
-    color: #F5C9F1;
-}
-
-.words {
+nav .navlist .links li .words {
     text-decoration: none;
     color: #E8E8E8;
     font-family: "NTR",sans-serif;
@@ -48,8 +41,23 @@ ol li {
     letter-spacing: .05em;
 }
 
-.words .active {
-    font-size: 15px;
+nav .navlist .links li.active .border {
+    width: 2rem;
+    background-color: #F5C9F1;
+}
+
+nav .navlist .links li:hover .border {
+    width: 2rem;
+    background-color: #F5C9F1;
+}
+
+nav .navlist .links li.active .words {
+    font-size: 20px;
+    color: #F5C9F1;
+}
+
+nav .navlist .links li:hover .words {
+    font-size: 20px;
     color: #F5C9F1;
 }
 
@@ -60,8 +68,9 @@ ol li {
 
     cursor: pointer;
     position: absolute;
-    bottom: 14vh;
+    bottom: 13vh;
     transition: 50ms;
+    margin-bottom: 45px;
 }
 
 .navlist .aaicon:hover {
@@ -75,7 +84,7 @@ ol li {
 
     cursor: pointer;
     position: absolute;
-    margin-top: 20px;
+    margin-top: 35px;
 }
 
 .resume-button a {

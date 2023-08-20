@@ -56,14 +56,14 @@ const typing = () => {
 }
 
 const activeIngredients = () => {
-    const sections = document.querySelectorAll("section");
-    const navLi = document.querySelectorAll("nav ol li");
+    const sections = document.querySelectorAll("section .container .reveal .fade");
+    const navLi = document.querySelectorAll("nav .navlist .links li");
     window.onscroll = () => {
         let current = "";
 
         sections.forEach((section) => {
             const sectionTop = section.offsetTop;
-            if (pageYOffset >= sectionTop - 60) {
+            if (scrollY >= sectionTop - 60) {
                 current = section.getAttribute("id"); }
         });
 
