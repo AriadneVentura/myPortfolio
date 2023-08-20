@@ -1,11 +1,11 @@
 #experience {
-    min-height: 80vh;
+    min-height: 70vh;
 }
 
 .expert {
     left: 35vw;
     /*bottom: 33vh;*/
-    top: 20vh;
+    top: 30vh;
     position:absolute;
     color: #bbbbbb;
     font-size: 22px;

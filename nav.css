@@ -31,6 +31,7 @@ nav .navlist .links li .border {
     height: 2px;
     width: 2rem;
     background-color: #a1a1a1;
+    transition-duration: .20s;
 }
 
 nav .navlist .links li .words {
@@ -55,12 +56,10 @@ nav .navlist .links li:hover .border {
 }
 
 nav .navlist .links li.active .words {
-    font-size: 20px;
     color: #F5C9F1;
 }
 
 nav .navlist .links li:hover .words {
-    font-size: 20px;
     color: #F5C9F1;
 }
 
