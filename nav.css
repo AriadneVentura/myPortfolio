@@ -3,7 +3,6 @@ nav {
     position: fixed;
     top: 35vh;
     left: 5vw;
-    font-size: 5rem;
     z-index: 1;
 }
 
@@ -31,13 +30,13 @@ ol li {
     display: inline-block;
     margin-right: 10px;
     height: 2px;
-    width: 2rem;
+    width: 1rem;
     color: #E8E8E8;
     background-color: #a1a1a1;
 }
 
 .border .active {
-    width: 4rem;
+    width: 2rem;
     color: #F5C9F1;
 }
 
@@ -61,8 +60,7 @@ ol li {
 
     cursor: pointer;
     position: absolute;
-    left: 5%;
-    top: 20%;
+    bottom: 14vh;
     transition: 50ms;
 }
 
@@ -71,22 +69,21 @@ ol li {
 }
 
 .resume-button {
-    color: #F5C9F1;
-    background-color: transparent;
     border: 1.5px solid #F5C9F1;
     border-radius: 1px;
     padding: 0.1rem 0.5rem;
 
-
     cursor: pointer;
-    transition: 100ms;
-
-    margin-left: 15px;
-
     position: absolute;
-    left: 92vw;
-    top: 20%;
+    margin-top: 20px;
+}
 
+.resume-button a {
+    text-decoration: none;
+    color: #F5C9F1;
+    font-size: 18px;
+    font-family: "NTR",sans-serif;
+    letter-spacing: .05em;
 }
 
 .resume-button:hover {

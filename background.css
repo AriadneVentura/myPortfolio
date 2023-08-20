@@ -52,7 +52,7 @@ body{
     position:absolute;
 
     width: 70vw;
-    height: 90vh;
+    height: 88vh;
     left: 25%;
     top: 65vh;
     border: 20px solid #F5C9F1;
@@ -65,7 +65,7 @@ body{
     position:absolute;
 
     width: 65%;
-    height: 75%;
+    height: 75vh;
     left: 25%;
     top: 160vh;
     border: 20px solid #313131;
@@ -74,9 +74,9 @@ body{
 }
 
 section {
-    top: 20vh;
-    min-height: 80vh;
-    display: flex;
+    /*top: 20vh;*/
+    min-height: 60vh;
+    /*display: flex;*/
     justify-content: center;
     align-items: center;
 }

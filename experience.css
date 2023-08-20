@@ -1,6 +1,7 @@
 #experience {
     left: 35vw;
-    top: 70vh;
+    /*bottom: 33vh;*/
+    top: 50vh;
     position:absolute;
     color: #bbbbbb;
     font-size: 22px;
@@ -32,12 +33,12 @@
 }
 .content h3 a {
     text-decoration: none;
-    color: #c7adfc;
+    color: #F5C9F1;
     font-size: 2.6rem;
 }
 
 .content h3 a:hover {
-    color: #9d89c2;
+    color: #93788f;
 }
 
 .content h5 {
@@ -46,29 +47,41 @@
     margin-bottom: 10px;
 }
 
-.content li {
-    font-size: 1.3rem;
-    font-family: "NTR",sans-serif;
-    max-width: 50%;
-    margin-left: 40px;
-    list-style-type: circle;
-    margin-bottom: 15px;
+.content li::before {
+    content: "▹ ";
+    position: absolute;
+    left: 0;
+    color: #F5C9F1;
 }
 
-.content .tools li {
+.content li {
+    font-size: 1.2rem;
+    font-family: "NTR",sans-serif;
+    max-width: 55%;
+    margin-left: 40px;
+    margin-bottom: 15px;
+    list-style: none;
+}
+
+.technologies {
+    margin
+}
+
+.tools li {
     display: inline-grid;
-    padding: 0px 10px 10px 10px;
-    margin-top: 10px;
-    border-radius: 25px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    list-style: none;
+    padding: 5px 15px;
+    font-size: 1rem;
+    border-radius: 20px;
+    /*box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;*/
 
-    text-decoration: none;
-    font-family: 'DesirePro', sans-serif;
-    width: 80px;
-    text-align: center;
-    font-size: 22px;
+    /*text-decoration: none;*/
+    /*font-family: 'DesirePro', sans-serif;*/
+    /*width: 80px;*/
+    /*text-align: center;*/
+    /*font-size: 22px;*/
 
-    background-color: #9d89c2;
-    color: #f3e9ff;
+    background-color: #404044;
+    color: #F5C9F1;
 }
 
