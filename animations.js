@@ -56,7 +56,7 @@ const typing = () => {
 }
 
 const activeIngredients = () => {
-    const sections = document.querySelectorAll("section .container .reveal .fade");
+    const sections = document.querySelectorAll("section");
     const navLi = document.querySelectorAll("nav .navlist .links li");
     window.onscroll = () => {
         let current = "";
@@ -64,7 +64,9 @@ const activeIngredients = () => {
         sections.forEach((section) => {
             const sectionTop = section.offsetTop;
             if (scrollY >= sectionTop - 60) {
-                current = section.getAttribute("id"); }
+                console.log(section)
+                current = section.getAttribute("id");
+            }
         });
 
         navLi.forEach((li) => {

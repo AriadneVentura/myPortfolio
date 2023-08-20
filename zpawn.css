@@ -5,7 +5,7 @@
     color: #E8E8E8;
 }
 
-#zpawn {
+.zpawn {
     display: flex;
     flex-direction: row;
     left: 35vw;
@@ -16,11 +16,11 @@
     font-size: 22px;
 }
 
-#zpawn h2 {
+.zpawn h2 {
     top: -17%;
 }
 
-#zpawn h2::after {
+.zpawn h2::after {
     content: "";
     display: block;
     width: 25vw;
@@ -36,7 +36,7 @@
     max-width: 60%;
 }
 
-#zpawn img {
+.zpawn img {
     max-width: 18vw;
     height: auto;
     border-radius: 10px;
@@ -46,13 +46,13 @@
     bottom: 6vh;
 }
 
-#zpawn .logos img{
+.zpawn .logos img{
     max-width: 30px;
     height: auto;
     margin-right: 10px;
 }
 
-#zpawn .about-image .logos {
+.zpawn .about-image .logos {
     display: flex;
     flex-direction: row;
     margin-left: 6vw;
@@ -61,7 +61,7 @@
 
 /*laptop screen*/
 @media only screen and (min-device-width: 1200px)  and (max-width: 1600px) {
-    #zpawn {
+    .zpawn {
         left: 34vw;
         top: 27vh;
     }
@@ -70,7 +70,7 @@
         font-size: 1.1rem;
     }
 
-    #zpawn h2::after {
+    .zpawn h2::after {
         width: 24vw;
         margin-top: -20px;
     }

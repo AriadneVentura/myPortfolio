@@ -92,6 +92,14 @@
         top: 49vh;
     }
 
+    .content h3 {
+        font-size: 2.2rem;
+        margin-bottom: unset;
+    }
+
+    .content h3 a {
+        font-size: 2.3rem;
+    }
     .content li {
         font-size: 1.1rem;
         max-width: 70%;
