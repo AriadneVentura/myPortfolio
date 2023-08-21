@@ -136,8 +136,7 @@
     }
 
     .tools li::before {
-        left: unset;
-        margin-right: 20px;
+        left: 0;
     }
 
     .tools li {
