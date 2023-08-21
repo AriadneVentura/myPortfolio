@@ -78,3 +78,41 @@
         margin-top: -20px;
     }
 }
+
+/*iphone*/
+@media only screen and (max-width: 480px) {
+    #spawn {
+        min-height: 55vh;
+    }
+    .zpawn {
+        left: 10vw;
+        top: 10vh;
+        display: unset;
+        flex-direction: unset;
+    }
+
+    .zpawn h2::after {
+        width: 55vw;
+        margin-top: -20px;
+    }
+
+    .zpawn .about-image .logos {
+        top: -12vh;
+        left: 35vw;
+        margin-top: 20px;
+        position: absolute;
+    }
+
+    .about p{
+        font-size: 1rem;
+        font-family: "NTR",sans-serif;
+        max-width: 90%;
+    }
+
+    .zpawn .selfie {
+        display: none;
+    }
+
+
+
+}

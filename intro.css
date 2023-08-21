@@ -85,6 +85,46 @@
     .description {
         font-size: 1.2rem;
     }
+}
 
+@media only screen and (max-width: 480px) {
+    .intro-wrap {
+        width: 80vw;
+        margin: 0 auto;
+    }
+    .intro-wrap .wrapper {
+        position: relative;
+        left: unset;
+        top: 5vh;
+        text-align: center;
+    }
+
+    .wrapper .static-txt {
+        font-size: 3.5rem;
+    }
+
+    .intro {
+        margin-top: 25px;
+        left: unset;
+        top: unset;
+        text-align: center;
+        max-width: 80%;
+    }
+    .title {
+        font-size: 1.6rem;
+        margin-bottom: 30px;
+    }
+
+    .description {
+        font-size: 1rem;
+        font-family: "NTR",sans-serif;
+        color: #c7c7c7;
+    }
+
+    #lol::after{
+        top: 1vh;
+        height: 4rem;
+        border-left: 3px solid #F5C9F1;
+    }
 }
 

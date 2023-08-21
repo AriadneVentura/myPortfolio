@@ -122,3 +122,10 @@ nav .navlist .links li:hover .words {
         width: 2rem;
     }
 }
+
+/*add 600*/
+@media only screen and (max-width: 480px) {
+    nav {
+        display: none;
+    }
+}

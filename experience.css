@@ -77,13 +77,6 @@
     padding: 5px 15px;
     font-size: 1rem;
     border-radius: 20px;
-    /*box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;*/
-
-    /*text-decoration: none;*/
-    /*font-family: 'DesirePro', sans-serif;*/
-    /*width: 80px;*/
-    /*text-align: center;*/
-    /*font-size: 22px;*/
 
     background-color: #404044;
     color: #F5C9F1;
@@ -113,6 +106,44 @@
     .expert h2::after {
         /*width: 35vw;*/
         margin-top: -20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .expert {
+        left: 10vw;
+        top: 10vh;
+    }
+
+    .content h3 {
+        font-size: 1.8rem;
+    }
+
+    .content h3 a {
+        font-size: 2rem;
+        text-decoration: underline;
+    }
+
+    .content li {
+        margin-left: 15px;
+        font-size: 1rem;
+        max-width: 85%;
+    }
+
+    .tools {
+        display: grid;
+        grid-template-columns: repeat(2,minmax(150px,10px));
+    }
+
+    .tools li::before {
+        left: unset;
+        margin-right: 20px;
+    }
+
+    .tools li {
+        margin-left: 30px;
+        padding: 5px 5px;
+        text-align: center;
     }
 }
 
