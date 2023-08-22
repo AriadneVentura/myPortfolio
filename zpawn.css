@@ -130,7 +130,6 @@
     }
 
     .zpawn h2::after {
-        width: 24vw;
         margin-top: -20px;
         margin-left: 120px;
     }
