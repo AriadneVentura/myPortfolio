@@ -115,6 +115,12 @@
         top: 10vh;
     }
 
+    .expert h2::after {
+        width: 36vw;
+        margin-top: -20px;
+        margin-left: 160px;
+    }
+
     .content h3 {
         font-size: 1.8rem;
     }
@@ -146,3 +152,9 @@
     }
 }
 
+/*dumb iphone specific styling */
+@media only screen and (max-width: 375px) {
+    .expert {
+        top: 25vh;
+    }
+}

@@ -62,6 +62,15 @@
     padding-bottom: 20px;
 }
 
+.zpawn .about .special {
+    font-size: 0.9rem;
+    font-family: "NTR",sans-serif;
+    font-weight: bold;
+    color: #F5C9F1;
+    text-decoration: none;
+    letter-spacing: .05em;
+}
+
 /*laptop screen*/
 @media only screen and (min-device-width: 1200px)  and (max-width: 1600px) {
     .zpawn {
@@ -79,10 +88,10 @@
     }
 }
 
-/*iphone*/
+/*phone*/
 @media only screen and (max-width: 600px) {
     #spawn {
-        min-height: 55vh;
+        min-height: 65vh;
     }
     .zpawn {
         left: 10vw;
@@ -92,7 +101,7 @@
     }
 
     .zpawn h2::after {
-        width: 55vw;
+        width: 49vw;
         margin-top: -20px;
     }
 
@@ -112,7 +121,11 @@
     .zpawn .selfie {
         display: none;
     }
+}
 
-
-
+/*dumb iphone specific styling */
+@media only screen and (max-width: 375px) {
+    .zpawn {
+        top: 20vh;
+    }
 }

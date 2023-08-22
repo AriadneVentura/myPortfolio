@@ -88,6 +88,13 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .intro {
+        -webkit-animation: fadein 0s; /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 0s; /* Firefox < 16 */
+        -ms-animation: fadein 0s; /* Internet Explorer */
+        -o-animation: fadein 0s; /* Opera < 12.1 */
+        animation: fadein 0s;
+    }
     .intro-wrap {
         width: 80vw;
         margin: 0 auto;
@@ -127,4 +134,3 @@
         border-left: 3px solid #F5C9F1;
     }
 }
-
