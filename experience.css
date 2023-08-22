@@ -155,6 +155,10 @@
 /*dumb iphone specific styling */
 @media only screen and (max-width: 375px) {
     .expert {
-        top: 25vh;
+        top: 22vh;
+    }
+
+    .expert h2::after {
+        margin-left: 170px;
     }
 }
