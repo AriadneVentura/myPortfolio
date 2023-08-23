@@ -80,4 +80,14 @@ const activeIngredients = () => {
 }
 
 
+const maze = () => {
+    const canvas = document.getElementById("canvas");
+    const ctx = canvas.getContext("2d");
+
+    // i want to use prims algorithm
+
+    ctx.fillStyle = "green";
+    ctx.fillRect(10, 10, 150, 100);
+
+}
 
