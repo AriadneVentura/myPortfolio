@@ -2,20 +2,21 @@
     font-family: 'DesirePro';
     src: url(fonts/desire-pro.otf) format('opentype');
     font-style: normal;
+    font-weight: 400
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'DesirePro', sans-serif;
-
+    font-family: 'DesirePro', serif;
 }
-body{
+
+body {
     /*display: flex;*/
     /*align-items: center;*/
     /*justify-content: left;*/
@@ -49,7 +50,7 @@ body{
 
 #pink_box {
     /*position: fixed*/
-    position:absolute;
+    position: absolute;
 
     width: 70vw;
     height: 88vh;
@@ -62,7 +63,7 @@ body{
 
 #grey_box {
     /*position: fixed;*/
-    position:absolute;
+    position: absolute;
 
     width: 65%;
     height: 75vh;
@@ -85,6 +86,7 @@ section {
 .reveal.active {
     opacity: 1;
 }
+
 .active.fade {
     animation: fade-bottom 1s ease-in;
 }
@@ -94,6 +96,7 @@ section {
         transform: translateY(50px);
         opacity: 0;
     }
+
     100% {
         transform: translateY(0);
         opacity: 1;
@@ -104,6 +107,7 @@ section {
     section {
         min-height: 45vh;
     }
+
     #blue_box {
         /*height: 400vh;*/
         /*left: 85%;*/
@@ -121,6 +125,7 @@ section {
     .reveal {
         opacity: unset;
     }
+
     .active.fade {
         animation: unset;
     }
