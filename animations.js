@@ -79,11 +79,76 @@ const activeIngredients = () => {
     };
 }
 
+const slider = () => {
+    const slider = document.querySelector('.gallery');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    slider.addEventListener('mousedown', e => {
+        isDown = true;
+        slider.classList.add('active');
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+    });
+    slider.addEventListener('mouseleave', _ => {
+        isDown = false;
+        slider.classList.remove('active');
+    });
+    slider.addEventListener('mouseup', _ => {
+        isDown = false;
+        slider.classList.remove('active');
+    });
+    slider.addEventListener('mousemove', e => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const SCROLL_SPEED = 3;
+        const walk = (x - startX) * SCROLL_SPEED;
+        slider.scrollLeft = scrollLeft - walk;
+    });
+
+}
+
 
 const maze = () => {
     // 1. Start with a grid of unvisited cells.
-    let dimensions = 30;
+    let dimensions = 20;
     let cells = [];
+    for (let x = 0; x < dimensions; x++ ) {
+        // initialize the empty rows, maze width = x + 1
+        cells[x] = []
+        // [[], [], [], [], [], []]
+        for (let y = 0; y < dimensions; y++) {
+            // create each cell in row we just made
+            // [[0, 0], [1, 0], [2, 0]]
+            // i think this is an object lol
+            let cell = {
+                x: x,
+                y: y,
+                // y, x?
+                index: [x, y],
+                status: "unvisited",
+                adjacents: [],
+                connections: []
+            };
+            cells[x][y] = cell;
+            // add to unvisited set
+            // unvisited.add(cell);
+            // add adjacents
+            if (cells[y - 1]) {
+                if (cells[y - 1][x]) {
+                    let up = cells[y - 1][x];
+                    cell.adjacents.push(up);
+                    up.adjacents.push(cell);
+                }
+            }
+
+
+        }
+
+
+    }
     // 2. Create two empty sets, marking visited cells, and what we’ll call frontier cells.
     // 3. Choose a random cell as the starting point, and add it to the visited set.
     // 4. Add all unvisited cells that are adjacent to the current cell to the frontier set.
