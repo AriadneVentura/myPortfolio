@@ -3,7 +3,7 @@
 }
 
 .expert {
-    left: 35vw;
+    left: 47vw;
     /*bottom: 33vh;*/
     top: 30vh;
     position:absolute;
@@ -27,7 +27,7 @@
     margin-top: -15px;
     height: 1px;
     margin-left: 190px;
-    background-color: #a1a1a1;
+    background-color: #777777;
 }
 
 .content h3 {
@@ -39,10 +39,13 @@
     text-decoration: none;
     color: #F5C9F1;
     font-size: 2.6rem;
+    transition: all .4s ease;
 }
 
 .content h3 a:hover {
     color: #93788f;
+    transition: all .4s ease;
+    font-size: 2.7rem;
 }
 
 .content h5 {
@@ -61,7 +64,7 @@
 .content li {
     font-size: 1.3rem;
     font-family: "NTR",sans-serif;
-    max-width: 55%;
+    max-width: 65%;
     margin-left: 40px;
     margin-bottom: 15px;
     list-style: none;

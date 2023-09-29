@@ -72,13 +72,17 @@ nav .navlist .links li:hover .words {
     cursor: pointer;
     position: absolute;
     bottom: 13vh;
-    transition: 50ms;
-    margin-bottom: 25px;
+    /*transition: 50ms;*/
+    margin-bottom: 55px;
     left: -6px;
+    transition: all .4s ease;
 }
 
 .navlist .aaicon:hover {
-    background-color: #F5C9F120;
+    /*background-color: #F5C9F120;*/
+    filter: grayscale(1);
+    transition: all .4s ease;
+    transform: scale(1.1);
 }
 
 .resume-button {
@@ -88,7 +92,9 @@ nav .navlist .links li:hover .words {
 
     cursor: pointer;
     position: absolute;
-    margin-top: 35px;
+    margin-top: 45px;
+    transition: all .4s ease;
+
 }
 
 .resume-button a {
@@ -101,7 +107,9 @@ nav .navlist .links li:hover .words {
 
 .resume-button:hover {
     /*the color is #F5C9F1 the 20 at the end refers to trasparency*/
-    background-color: #F5C9F120;
+    filter: grayscale(1);
+    transition: all .4s ease;
+    transform: scale(1.1);
 }
 
 

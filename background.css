@@ -55,6 +55,20 @@ body {
     background-color: #5d5d5d;
 }
 
+#behind_box {
+    position: absolute;
+
+    width: 50vw;
+    height: 70vh;
+    left: 48vw;
+    top: 190vh;
+
+    border: 20px solid #343434;
+    outline: 1px solid #777777;
+    float: left;
+    background-color: #5d5d5d;
+}
+
 #pink_box {
     /*position: fixed*/
     position: absolute;
@@ -64,7 +78,7 @@ body {
     left: 27%;
     top: 65vh;
     border: 2px solid #F5C9F1;
-    outline: 14px solid #777777;
+    outline: 12px solid #777777;
     float: left;
     background-color: #4b4b4b;
 }
@@ -74,11 +88,11 @@ body {
     position: absolute;
 
     width: 55vw;
-    height: 75vh;
-    left: 26vw;
+    height: 77vh;
+    left: 38vw;
     top: 160vh;
     border: 20px solid #313131;
-    outline: 1px solid #E8E8E8;
+    outline: 1px solid #777777;
 
     /*float: left;*/
     background-color: #525252;
@@ -88,13 +102,13 @@ body {
     /*position: fixed;*/
     position: absolute;
 
-    width: 70vw;
+    width: 66vw;
     height: 75vh;
-    left: 25%;
+    left: 27%;
     top: 242vh;
-    border: 20px solid #F5C9F1;
-    /*float: left;*/
-    background-color: #444444;
+    outline: 1px solid #777777;
+    float: left;
+    background-color: #3a3a3a;
 }
 
 section {
