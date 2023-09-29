@@ -3,6 +3,7 @@
     font-size: 2.5rem;
     list-style-type: decimal-leading-zero;
     color: #E8E8E8;
+    font-family: "CardinalFruit", Serif;
 }
 
 .heading-font {
@@ -30,15 +31,15 @@
 .zpawn h2::after {
     content: "";
     display: block;
-    width: 25vw;
-    margin-top: -10px;
+    width: 21vw;
+    margin-top: -15px;
     height: 1px;
-    margin-left: 110px;
+    margin-left: 130px;
     background-color: #a1a1a1;
 }
 
 .about p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-family: "NTR", sans-serif;
     max-width: 60%;
 }
@@ -46,11 +47,24 @@
 .zpawn img {
     max-width: 18vw;
     height: auto;
-    border-radius: 10px;
-    box-shadow: 6px 13px 23px -5px rgba(0, 0, 0, .46);
     position: relative;
     left: -13vw;
     bottom: 6vh;
+}
+
+.zpawn .selfie {
+    transform: perspective(800px) scale(.8);
+    transition: all .6s ease;
+    box-shadow: 6px 13px 23px -5px rgba(0, 0, 0, .46);
+    outline: 1px solid #fffefe;
+
+
+}
+
+.zpawn .selfie:hover {
+    transform: perspective(800px) scale(.9);
+    filter: grayscale(0.8);
+    transition: all .8s ease
 }
 
 .zpawn .logos img {
@@ -67,8 +81,8 @@
 }
 
 .zpawn .about .special {
-    font-size: 0.9rem;
-    font-family: "NTR", sans-serif;
+    font-size: 1.1rem;
+    font-family: "CardinalFruit", Serif;
     font-weight: bold;
     color: #F5C9F1;
     text-decoration: none;

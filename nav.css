@@ -20,7 +20,7 @@ nav .navlist {
 
 nav .navlist .links li {
     font-size: 18px;
-    font-family: "NTR",sans-serif;
+    /*font-family: "CardinalFruit", Serif;*/
     padding-top: 20px;
 }
 
@@ -28,7 +28,7 @@ nav .navlist .links li .border {
     content: "";
     display: inline-block;
     margin-right: 10px;
-    height: 2px;
+    height: 1px;
     width: 2rem;
     background-color: #a1a1a1;
     transition-duration: .20s;
@@ -37,8 +37,9 @@ nav .navlist .links li .border {
 nav .navlist .links li .words {
     text-decoration: none;
     color: #E8E8E8;
-    font-family: "NTR",sans-serif;
-    font-size: 18px;
+    /*font-family: "NTR",sans-serif;*/
+    font-family: "CardinalFruit", Serif;
+    font-size: 23px;
     letter-spacing: .05em;
 }
 

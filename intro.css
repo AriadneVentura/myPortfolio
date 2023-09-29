@@ -1,14 +1,16 @@
 .wrapper{
     left: 35vw;
-    top: 30vh;
+    top: 32vh;
     z-index: 5;
 
     position: absolute;
+    /*font-family: "CardinalFruit", Serif;*/
 }
 
 .wrapper .static-txt{
     color: #E8E8E8;
-    font-size: 5.5rem;
+    font-size: 4.9rem;
+    font-family: "CardinalFruit", Serif;
     /*display: inline-block;*/
     /*height: 5rem;*/
 }
@@ -17,6 +19,7 @@
     color: #F5C9F1;
     /*font-size: 5.5rem;*/
     /*display: inline-block;*/
+    font-family: "CardinalFruit", Serif;
 
 }
 /*  USE REM FOR FONTS */
@@ -71,13 +74,16 @@
 }
 
 .title {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
+    font-family: "CardinalFruit", Serif;
 }
 
 .description {
     font-size: 1.3rem;
     font-family: "NTR",sans-serif;
     color: #c7c7c7;
+    display: block;
+
 }
 
 

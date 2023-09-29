@@ -23,16 +23,16 @@
 .expert h2::after {
     content: "";
     display: block;
-    width: 35vw;
-    margin-top: -10px;
+    width: 25vw;
+    margin-top: -15px;
     height: 1px;
-    margin-left: 170px;
+    margin-left: 190px;
     background-color: #a1a1a1;
 }
 
 .content h3 {
     margin: 15px 0 0 0;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     color: #E8E8E8;
 }
 .content h3 a {
@@ -59,7 +59,7 @@
 }
 
 .content li {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-family: "NTR",sans-serif;
     max-width: 55%;
     margin-left: 40px;
@@ -75,7 +75,7 @@
     display: inline-grid;
     list-style: none;
     padding: 5px 15px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     border-radius: 20px;
 
     background-color: #404044;

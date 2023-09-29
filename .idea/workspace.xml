@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80468605-82fe-44f9-b9a6-31a79e30cecc" name="Changes" comment="this is not a real commit i just want to code on laptop in bed" />
+    <list default="true" id="80468605-82fe-44f9-b9a6-31a79e30cecc" name="Changes" comment="this is not a real commit i just want to code on laptop in bed">
+      <change afterPath="$PROJECT_DIR$/fonts/cardinal-fruits.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/background.css" beforeDir="false" afterPath="$PROJECT_DIR$/background.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experience.css" beforeDir="false" afterPath="$PROJECT_DIR$/experience.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro.css" beforeDir="false" afterPath="$PROJECT_DIR$/intro.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/nav.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zpawn.css" beforeDir="false" afterPath="$PROJECT_DIR$/zpawn.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,6 +71,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\WebstormProjects\portfolio\fonts" />
       <recent name="C:\Users\User\WebstormProjects\portfolio\thingies" />
     </key>
   </component>
@@ -98,7 +108,9 @@
       <workItem from="1691731699799" duration="4000" />
       <workItem from="1691831352818" duration="661000" />
       <workItem from="1691903610145" duration="30586000" />
-      <workItem from="1692262377562" duration="32058000" />
+      <workItem from="1692262377562" duration="32292000" />
+      <workItem from="1693044434588" duration="4299000" />
+      <workItem from="1695445538802" duration="14684000" />
     </task>
     <task id="LOCAL-00001" summary="stuff is happening">
       <created>1691915448633</created>
@@ -206,7 +218,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/animations.js</url>
           <line>33</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
