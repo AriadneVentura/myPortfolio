@@ -78,7 +78,7 @@ body {
     left: 27%;
     top: 65vh;
     border: 2px solid #F5C9F1;
-    outline: 12px solid #777777;
+    outline: 12px solid #6c6c6c;
     float: left;
     background-color: #4b4b4b;
 }
@@ -103,12 +103,13 @@ body {
     position: absolute;
 
     width: 66vw;
-    height: 75vh;
+    height: 65vh;
     left: 27%;
     top: 242vh;
-    outline: 1px solid #777777;
+    border: 15px solid #6c6c6c;
+    outline: 1px solid #F5C9F1;
     float: left;
-    background-color: #3a3a3a;
+    background-color: #4b4b4b;
 }
 
 section {
@@ -126,6 +127,21 @@ section {
 
 .active.fade {
     animation: fade-bottom 1s ease-in;
+}
+
+footer {
+    position: relative;
+    top: 25vw;
+    width: 100%;
+    height: 5vw;
+    left: 10vw;
+    text-align: center;
+}
+
+footer div{
+    font-family: "CardinalFruit", Serif;
+    color: #d0cdcd;
+    font-size: 16px;
 }
 
 @keyframes fade-bottom {

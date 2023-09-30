@@ -73,7 +73,7 @@ nav .navlist .links li:hover .words {
     position: absolute;
     bottom: 13vh;
     /*transition: 50ms;*/
-    margin-bottom: 55px;
+    margin-bottom: 45px;
     left: -6px;
     transition: all .4s ease;
 }
