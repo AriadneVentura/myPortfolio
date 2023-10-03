@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80468605-82fe-44f9-b9a6-31a79e30cecc" name="Changes" comment="iwefjwefjioweiofjwefjiowefjio">
-      <change afterPath="$PROJECT_DIR$/thingies/life.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thingies/nd.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thingies/scraggle.png" afterDir="false" />
+    <list default="true" id="80468605-82fe-44f9-b9a6-31a79e30cecc" name="Changes" comment="im trying to cook">
+      <change afterPath="$PROJECT_DIR$/aesthetic.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/animations.js" beforeDir="false" afterPath="$PROJECT_DIR$/animations.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/background.css" beforeDir="false" afterPath="$PROJECT_DIR$/background.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code-files.css" beforeDir="false" afterPath="$PROJECT_DIR$/code-files.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
@@ -110,7 +109,7 @@
       <workItem from="1691903610145" duration="30586000" />
       <workItem from="1692262377562" duration="32292000" />
       <workItem from="1693044434588" duration="4299000" />
-      <workItem from="1695445538802" duration="29179000" />
+      <workItem from="1695445538802" duration="43116000" />
     </task>
     <task id="LOCAL-00001" summary="stuff is happening">
       <created>1691915448633</created>
@@ -196,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695994615800</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="im trying to cook">
+      <created>1696052273760</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1696052273760</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,18 +232,8 @@
     <MESSAGE value="this is not a real commit i just want to code on laptop in bed" />
     <MESSAGE value="idek tbh" />
     <MESSAGE value="iwefjwefjioweiofjwefjiowefjio" />
-    <option name="LAST_COMMIT_MESSAGE" value="iwefjwefjioweiofjwefjiowefjio" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/animations.js</url>
-          <line>33</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="im trying to cook" />
+    <option name="LAST_COMMIT_MESSAGE" value="im trying to cook" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/portfolio$portfolio_html.dat" NAME="portfolio.html Coverage Results" MODIFIED="1656918720812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="WipCoverageRunner" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

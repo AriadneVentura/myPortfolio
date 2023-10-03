@@ -6,16 +6,8 @@ nav {
     z-index: 1;
 }
 
-nav .navlist {
-    /*list-style-type: decimal-leading-zero;*/
-    /*list-style-position: inside;*/
-
-    /*width: 100% !important;*/
-    /*background-color: #41414190;*/
-
-    /*transition: 1000ms;*/
-    list-style: none;
-    z-index: 1;
+nav ol {
+ list-style: none;
 }
 
 nav .navlist .links li {
@@ -73,7 +65,7 @@ nav .navlist .links li:hover .words {
     position: absolute;
     bottom: 13vh;
     /*transition: 50ms;*/
-    margin-bottom: 45px;
+    margin-bottom: 95px;
     left: -6px;
     transition: all .4s ease;
 }
@@ -92,7 +84,7 @@ nav .navlist .links li:hover .words {
 
     cursor: pointer;
     position: absolute;
-    margin-top: 45px;
+    margin-top: 35px;
     transition: all .4s ease;
 
 }

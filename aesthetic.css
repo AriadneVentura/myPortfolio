@@ -1,0 +1,83 @@
+
+.aesthetic {
+    margin-top: 20px;
+}
+.aesthetic input[type="checkbox"] {
+    display: none;
+    visibility: hidden;
+}
+
+.aesthetic label {
+    display: inline-block;
+}
+
+.aesthetic .check {
+    cursor: pointer;
+    position: relative;
+    margin: auto;
+    width: 18px;
+    height: 18px;
+    -webkit-tap-highlight-color: transparent;
+    transform: translate3d(0, 0, 0);
+}
+.aesthetic .check:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(34,50,84,0.03);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+.aesthetic .check svg {
+    position: relative;
+    z-index: 1;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #ffffff;
+    stroke-width: 1;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.2s ease;
+}
+.aesthetic .check svg path {
+    stroke-dasharray: 60;
+    stroke-dashoffset: 0;
+}
+.aesthetic .check svg polyline {
+    stroke-dasharray: 22;
+    stroke-dashoffset: 66;
+}
+.aesthetic .check:hover:before {
+    opacity: 1;
+}
+.aesthetic .check:hover svg {
+    stroke: #f5c9f1;
+}
+.aesthetic input[type="checkbox"]:checked + .check svg {
+    stroke: #f5c9f1;
+    stroke-width: 1.5;
+    background-color: unset;
+}
+.aesthetic input[type="checkbox"]:checked + .check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+.aesthetic input[type="checkbox"]:checked + .check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+.aesthetic #theVibes {
+    color: #E8E8E8;
+    font-size: 23px;
+    transition: all .4s;
+    font-weight: 400;
+    letter-spacing: .05em;
+    font-family: "CardinalFruit", Serif;
+    margin-left: 10px;
+}

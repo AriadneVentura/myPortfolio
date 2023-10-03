@@ -17,6 +17,18 @@ const reveal = () => {
 
 window.addEventListener("scroll", reveal);
 
+const aestheticActivate = () => {
+    const text = document.getElementById("theVibes");
+    text.innerText = "lighter";
+
+    document.querySelector("input[type=checkbox]").addEventListener("change", function() {
+        if (this.checked) {
+            text.innerText = "darker";
+        } else {
+            text.innerText = "lighter";
+        }
+    }, false);
+}
 
 const typing = () => {
     const names = ["Ariadne. ", "Endaira. "]
@@ -109,7 +121,6 @@ const slider = () => {
     });
 
 }
-
 
 const maze = () => {
     // 1. Start with a grid of unvisited cells.
