@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80468605-82fe-44f9-b9a6-31a79e30cecc" name="Changes" comment="im trying to cook">
-      <change afterPath="$PROJECT_DIR$/aesthetic.css" afterDir="false" />
+    <list default="true" id="80468605-82fe-44f9-b9a6-31a79e30cecc" name="Changes" comment="idk what im changing at this point but stuff keeps happening">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/animations.js" beforeDir="false" afterPath="$PROJECT_DIR$/animations.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/background.css" beforeDir="false" afterPath="$PROJECT_DIR$/background.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code-files.css" beforeDir="false" afterPath="$PROJECT_DIR$/code-files.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/nav.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +106,7 @@
       <workItem from="1691903610145" duration="30586000" />
       <workItem from="1692262377562" duration="32292000" />
       <workItem from="1693044434588" duration="4299000" />
-      <workItem from="1695445538802" duration="43116000" />
+      <workItem from="1695445538802" duration="45630000" />
     </task>
     <task id="LOCAL-00001" summary="stuff is happening">
       <created>1691915448633</created>
@@ -202,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696052273760</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="idk what im changing at this point but stuff keeps happening">
+      <created>1696331192381</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1696331192381</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,7 +237,8 @@
     <MESSAGE value="idek tbh" />
     <MESSAGE value="iwefjwefjioweiofjwefjiowefjio" />
     <MESSAGE value="im trying to cook" />
-    <option name="LAST_COMMIT_MESSAGE" value="im trying to cook" />
+    <MESSAGE value="idk what im changing at this point but stuff keeps happening" />
+    <option name="LAST_COMMIT_MESSAGE" value="idk what im changing at this point but stuff keeps happening" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/portfolio$portfolio_html.dat" NAME="portfolio.html Coverage Results" MODIFIED="1656918720812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="WipCoverageRunner" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

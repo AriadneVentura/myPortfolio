@@ -17,15 +17,34 @@ const reveal = () => {
 
 window.addEventListener("scroll", reveal);
 
+
+function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark }) {
+    if (localStorageTheme !== null) {
+        return localStorageTheme;
+    }
+
+    if (systemSettingDark.matches) {
+        return "dark";
+    }
+
+    return "light";
+}
+
+
 const aestheticActivate = () => {
     const text = document.getElementById("theVibes");
     text.innerText = "lighter";
 
+
     document.querySelector("input[type=checkbox]").addEventListener("change", function() {
         if (this.checked) {
             text.innerText = "darker";
+            document.querySelector('html').toggleAttribute('data-light-mode')
+
         } else {
             text.innerText = "lighter";
+            document.querySelector('html').toggleAttribute('data-light-mode')
+
         }
     }, false);
 }
