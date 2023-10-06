@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="experience.css">
         <link rel="stylesheet" href="code-files.css">
         <link rel="stylesheet" href="aesthetic.css">
+        <link rel="stylesheet" href="shared.css">
 
         <meta name="viewport" content="width=device-width; initial-scale=1.0;">
 
@@ -23,10 +24,18 @@
     <div id="creations_box"></div>
 
 
+<!--    CHECKLIST-->
+<!--    - light mode styling-->
+<!--    - normalisation of slider-->
+<!--    - click images to make them flip and show what ive done-->
+<!--    - laptop styling (AGAIN)-->
+<!--    - 27 inch styling-->
+<!--    - mobile styling-->
+
     <body>
         <nav>
             <div class="navlist">
-                <a href="#top"><img src="thingies/aaicon.png" class="aaicon"></a>
+                <a href="#top"><img src="thingies/aaicon.png" id="get-image" class="aaicon"></a>
                 <ol class="links">
                     <li>
                         <span class="border"></span>
@@ -43,7 +52,7 @@
                     </li>
                 </ol>
                 <div class="aesthetic">
-                    <input type="checkbox" id="cbx-43">
+                    <input type="checkbox" id="cbx-43" autocomplete="off">
                     <label for="cbx-43" class="check" id="check">
                         <svg width="18px" height="18px" viewBox="0 0 18 18">
                             <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
@@ -75,17 +84,17 @@
         <section class="container reveal fade" id="spawn">
             <div class="zpawn is-visible">
                 <div class= "about">
-                    <h2 class="numbered-heading heading-font">. /spawn</h2>
+                    <h2 class="numbered-heading heading-font"><span class="numb">0 |</span> spawn</h2>
                     <p>
                         Back in 2014, at the ancient age of 12, I decided to have a go at making my own minecraft server
-                        to host for my friends. This, along with playing games since before I could read,
+                        to host for my friends. This, along with playing games since forever,
                         sparked my interest and curiosity in coding and tech-related shenanigans.
                     </p>
                     <p> <br /> </p>
                     <p>
                         Time skip to the present, I am currently interning at
                         <a class="special" href="https://www.leidos.com/company/global/australia" target="_blank">Leidos</a>
-                        as a full-time software developer. At the same time, I am studying a Bachelor of Software Engineering at
+                        as a full-time software engineer. At the same time, I am studying a Bachelor of Software Engineering at
                         <a class="special" href="https://www.rmit.edu.au/study-with-us/levels-of-study/undergraduate-study/bachelor-degrees/bachelor-of-software-engineering-bp096" target="_blank">RMIT university</a>.
                     </p>
                     <p> <br /> </p>
@@ -113,7 +122,7 @@
 
         <section class="container reveal fade" id="experience">
             <div class="expert">
-                <h2 class="numbered-heading heading-font">. /experience</h2>
+                <h2 class="numbered-heading heading-font"><span class="numb">1 |</span> experience</h2>
                 <div class="content">
                     <h3 class="heading-font">Intern Software Developer »
                         <a href="https://www.leidos.com/company/global/australia" target="_blank">Leidos</a>
@@ -146,7 +155,7 @@
 
         <section class="container reveal fade" id="#creations">
             <div class="portfolio">
-                <h2 class="numbered-heading heading-font creations">. /creations</h2>
+                <h2 class="numbered-heading heading-font creations"><span class="numb">2 |</span> creations</h2>
                 <div class="projects">
                     <img class="a" src="thingies/nd.png">
                     <img class="a" src="thingies/scraggle.png">

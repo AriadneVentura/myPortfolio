@@ -3,11 +3,11 @@
 }
 
 .expert {
-    left: 47vw;
+    left: 48vw;
     /*bottom: 33vh;*/
-    top: 30vh;
+    top: 38vh;
     position:absolute;
-    color: #bbbbbb;
+    color: var(--text-colour);
     font-size: 22px;
 }
 
@@ -27,23 +27,23 @@
     margin-top: -15px;
     height: 1px;
     margin-left: 190px;
-    background-color: #777777;
+    background-color: var(--after-heading);;
 }
 
 .content h3 {
     margin: 15px 0 0 0;
     font-size: 2.3rem;
-    color: #E8E8E8;
+    color: var(--intro-colour);
 }
 .content h3 a {
     text-decoration: none;
-    color: #F5C9F1;
+    color: var(--highlight-colour);
     font-size: 2.6rem;
     transition: all .4s ease;
 }
 
 .content h3 a:hover {
-    color: #93788f;
+    color: var(--highlight-hover);
     transition: all .4s ease;
     font-size: 2.7rem;
 }
@@ -58,7 +58,7 @@
     content: "▹ ";
     position: absolute;
     left: 0;
-    color: #F5C9F1;
+    color: var(--nav-highlight-colour);
 }
 
 .content li {
@@ -81,8 +81,8 @@
     font-size: 1.1rem;
     border-radius: 20px;
 
-    background-color: #404044;
-    color: #F5C9F1;
+    background-color: var(--tools-background);
+    color: var(--nav-highlight-colour);
 }
 
 /*laptop screen*/

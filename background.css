@@ -23,6 +23,7 @@ html {
 }
 
 body {
+    transition: all 0.3s;
     /*display: flex;*/
     /*align-items: center;*/
     /*justify-content: left;*/
@@ -53,6 +54,7 @@ body {
     outline: 1px solid var(--behind-outline);
     float: left;
     background-color: var(--behind-bg);
+    transition: all 0.3s;
 }
 
 #spawn_box {
@@ -67,6 +69,7 @@ body {
     outline: 12px solid var(--spawn-outline);
     float: left;
     background-color: var(--spawn-bg);
+    transition: all 0.3s;
 }
 
 #experience_box {
@@ -74,14 +77,16 @@ body {
     position: absolute;
 
     width: 55vw;
-    height: 77vh;
-    left: 38vw;
+    height: 80vh;
+    left: 40vw;
     top: 160vh;
-    border: 20px solid var(--experience-border);
+    border: 15px solid var(--experience-border);
     outline: 1px solid var(--experience-outline);
 
     /*float: left;*/
     background-color: var(--experience-bg);
+    transition: all 0.3s;
+    /*z-index: -1;*/
 }
 
 #creations_box {
@@ -90,12 +95,13 @@ body {
 
     width: 66vw;
     height: 65vh;
-    left: 27%;
-    top: 242vh;
+    left: 25vw;
+    top: 230vh;
     border: 15px solid var(--creations-border);
-    outline: 1px solid var(--creations-outline);
+    outline: 2px solid var(--creations-outline);
     float: left;
     background-color: var(--creations-bg);
+    transition: all 0.3s;
 }
 
 section {
@@ -117,7 +123,7 @@ section {
 
 footer {
     position: relative;
-    top: 25vw;
+    top: 50vh;
     width: 100%;
     height: 5vw;
     left: 10vw;
@@ -126,7 +132,7 @@ footer {
 
 footer div{
     font-family: "CardinalFruit", Serif;
-    color: #d0cdcd;
+    color: var(--heading);
     font-size: 16px;
 }
 
@@ -147,17 +153,21 @@ footer div{
         min-height: 45vh;
     }
 
-    #blue_box {
+    #behind_box {
         /*height: 400vh;*/
         /*left: 85%;*/
         display: none;
     }
 
-    #pink_box {
+    #spawn_box {
         display: none;
     }
 
-    #grey_box {
+    #experience_box {
+        display: none;
+    }
+
+    #creations_box {
         display: none;
     }
 
@@ -176,46 +186,4 @@ footer div{
         -o-animation: fadein 2s; /* Opera < 12.1 */
         animation: fadein 2s;
     }
-}
-
-/*LIGHT THEME*/
-
-:root {
-    --body-bg: #3a3a3a;
-
-    --behind-border: #343434;
-    --behind-outline: #777777;
-    --behind-bg: #5d5d5d;
-
-    --spawn-border: #F5C9F1;
-    --spawn-outline: #6c6c6c;
-    --spawn-bg: #4b4b4b;
-
-    --experience-border: #313131;
-    --experience-outline: #777777;
-    --experience-bg: #525252;
-
-    --creations-border: #4b4b4b;
-    --creations-outline: #F5C9F1;
-    --creations-bg: #3f3f3f;
-}
-
-[data-light-mode] {
-    --body-bg: #ecebe6;
-
-    --behind-border: #dec1db;
-    --behind-outline: #755b75;
-    --behind-bg: #a993b2;
-
-    --spawn-border: #4d454d;
-    --spawn-outline: #F5C9F1;
-    --spawn-bg: #F5C9F1;
-
-    --experience-border: #F5C9F1;
-    --experience-outline: #777777;
-    --experience-bg: #525252;
-
-    --creations-border: #4b4b4b;
-    --creations-outline: #F5C9F1;
-    --creations-bg: #3f3f3f;
 }

@@ -2,8 +2,12 @@
     position: absolute;
     font-size: 2.5rem;
     list-style-type: decimal-leading-zero;
-    color: #E8E8E8;
+    color: var(--heading);
     font-family: "CardinalFruit", Serif;
+}
+
+.heading-font .numb {
+    font-size: 2.1rem;
 }
 
 .heading-font {
@@ -11,7 +15,7 @@
 }
 
 #spawn {
-    min-height: 80vh;
+    min-height: 70vh;
 }
 
 .zpawn {
@@ -20,7 +24,7 @@
     left: 35vw;
     top: 28vh;
     position: absolute;
-    color: #bbbbbb;
+    color: var(--text-colour);
     font-size: 22px;
 }
 
@@ -35,7 +39,7 @@
     margin-top: -15px;
     height: 1px;
     margin-left: 130px;
-    background-color: #777777;
+    background-color: var(--after-heading);;
 }
 
 .about p {
@@ -56,7 +60,7 @@
     transform: perspective(800px) scale(.8);
     transition: all .6s ease;
     box-shadow: 6px 13px 23px -5px rgba(0, 0, 0, .46);
-    outline: 1px solid #fffefe;
+    outline: 1px solid var(--borders-woo);
 }
 
 .zpawn .selfie:hover {
@@ -86,18 +90,18 @@
 }
 
 .zpawn .about .special {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-family: "CardinalFruit", Serif;
     font-weight: bold;
-    color: #F5C9F1;
+    color: var(--nav-highlight-colour);
     text-decoration: none;
     letter-spacing: .05em;
     transition: all .4s ease;
 }
 
 .zpawn .about .special:hover {
-    color: #93788f;
-    font-size: 1.2rem;
+    color: var(--highlight-hover);
+    font-size: 1.3rem;
     transition: all .4s ease;
 }
 

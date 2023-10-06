@@ -22,13 +22,13 @@ nav .navlist .links li .border {
     margin-right: 10px;
     height: 1px;
     width: 2rem;
-    background-color: #a1a1a1;
+    background-color: var(--line-border-colour);
     transition-duration: .20s;
 }
 
 nav .navlist .links li .words {
     text-decoration: none;
-    color: #E8E8E8;
+    color: var(--word-colour);
     /*font-family: "NTR",sans-serif;*/
     font-family: "CardinalFruit", Serif;
     font-size: 23px;
@@ -37,23 +37,22 @@ nav .navlist .links li .words {
 
 nav .navlist .links li.active .border {
     width: 4rem;
-    background-color: #F5C9F1;
+    background-color: var(--nav-highlight-colour);
     transition-duration: .20s;
-
 }
 
 nav .navlist .links li:hover .border {
     width: 4rem;
-    background-color: #F5C9F1;
+    background-color: var(--nav-highlight-colour);
     transition-duration: .20s;
 }
 
 nav .navlist .links li.active .words {
-    color: #F5C9F1;
+    color: var(--nav-highlight-colour);
 }
 
 nav .navlist .links li:hover .words {
-    color: #F5C9F1;
+    color: var(--nav-highlight-colour);
 }
 
 .navlist .aaicon {
@@ -78,7 +77,7 @@ nav .navlist .links li:hover .words {
 }
 
 .resume-button {
-    border: 1.5px solid #F5C9F1;
+    border: 1.5px solid var(--nav-highlight-colour);
     border-radius: 1px;
     padding: 0.1rem 0.5rem;
 
@@ -91,7 +90,7 @@ nav .navlist .links li:hover .words {
 
 .resume-button a {
     text-decoration: none;
-    color: #F5C9F1;
+    color: var(--nav-highlight-colour);
     font-size: 18px;
     font-family: "NTR",sans-serif;
     letter-spacing: .05em;

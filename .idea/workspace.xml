@@ -4,11 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80468605-82fe-44f9-b9a6-31a79e30cecc" name="Changes" comment="idk what im changing at this point but stuff keeps happening">
+    <list default="true" id="80468605-82fe-44f9-b9a6-31a79e30cecc" name="Changes" comment="soo... the button words BUT i have done absolutely zero light mdoe styling (who uses light mdoe anyway)">
+      <change afterPath="$PROJECT_DIR$/shared.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thingies/aaiconL.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aesthetic.css" beforeDir="false" afterPath="$PROJECT_DIR$/aesthetic.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/animations.js" beforeDir="false" afterPath="$PROJECT_DIR$/animations.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/background.css" beforeDir="false" afterPath="$PROJECT_DIR$/background.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code-files.css" beforeDir="false" afterPath="$PROJECT_DIR$/code-files.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experience.css" beforeDir="false" afterPath="$PROJECT_DIR$/experience.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro.css" beforeDir="false" afterPath="$PROJECT_DIR$/intro.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/nav.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zpawn.css" beforeDir="false" afterPath="$PROJECT_DIR$/zpawn.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +75,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\WebstormProjects\portfolio" />
       <recent name="C:\Users\User\WebstormProjects\portfolio\fonts" />
       <recent name="C:\Users\User\WebstormProjects\portfolio\thingies" />
     </key>
@@ -106,7 +115,7 @@
       <workItem from="1691903610145" duration="30586000" />
       <workItem from="1692262377562" duration="32292000" />
       <workItem from="1693044434588" duration="4299000" />
-      <workItem from="1695445538802" duration="45630000" />
+      <workItem from="1695445538802" duration="65459000" />
     </task>
     <task id="LOCAL-00001" summary="stuff is happening">
       <created>1691915448633</created>
@@ -206,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696331192381</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="soo... the button words BUT i have done absolutely zero light mdoe styling (who uses light mdoe anyway)">
+      <created>1696333951748</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1696333951748</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,7 +254,8 @@
     <MESSAGE value="iwefjwefjioweiofjwefjiowefjio" />
     <MESSAGE value="im trying to cook" />
     <MESSAGE value="idk what im changing at this point but stuff keeps happening" />
-    <option name="LAST_COMMIT_MESSAGE" value="idk what im changing at this point but stuff keeps happening" />
+    <MESSAGE value="soo... the button words BUT i have done absolutely zero light mdoe styling (who uses light mdoe anyway)" />
+    <option name="LAST_COMMIT_MESSAGE" value="soo... the button words BUT i have done absolutely zero light mdoe styling (who uses light mdoe anyway)" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/portfolio$portfolio_html.dat" NAME="portfolio.html Coverage Results" MODIFIED="1656918720812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="WipCoverageRunner" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

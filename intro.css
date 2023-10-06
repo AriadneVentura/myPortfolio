@@ -8,7 +8,7 @@
 }
 
 .wrapper .static-txt{
-    color: #E8E8E8;
+    color: var(--intro-colour);
     font-size: 4.9rem;
     font-family: "CardinalFruit", Serif;
     /*display: inline-block;*/
@@ -16,7 +16,7 @@
 }
 
 #lol {
-    color: #F5C9F1;
+    color: var(--highlight-colour);
     /*font-size: 5.5rem;*/
     /*display: inline-block;*/
     font-family: "CardinalFruit", Serif;
@@ -34,7 +34,7 @@
     height: 5.5rem;
     /*background: #5E5E5E;*/
     /*font-size: 5.5rem;*/
-    border-left: 4px solid #F5C9F1;
+    border-left: 4px solid var(--highlight-colour);
     animation: cursor .5s infinite alternate;
 }
 
@@ -47,7 +47,7 @@
 
 .intro {
     z-index:100;
-    color: #E8E8E8;
+    color: var(--intro-colour);
     margin-top: 90px;
     position: absolute;
     left: 35vw;
@@ -81,7 +81,7 @@
 .description {
     font-size: 1.3rem;
     font-family: "NTR",sans-serif;
-    color: #c7c7c7;
+    color: var(--desc-colour);
     display: block;
 
 }

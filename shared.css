@@ -1,0 +1,88 @@
+/*default theme*/
+:root {
+    /*background*/
+    --body-bg: #3a3a3a;
+
+    --behind-border: #343434;
+    --behind-outline: #777777;
+    --behind-bg: #5d5d5d;
+
+    --spawn-border: #F5C9F1;
+    --spawn-outline: #6c6c6c;
+    --spawn-bg: #4b4b4b;
+
+    --experience-border: #313131;
+    --experience-outline: #777777;
+    --experience-bg: #525252;
+
+    --creations-border: #4b4b4b;
+    --creations-outline: #F5C9F1;
+    --creations-bg: #3f3f3f;
+
+    /*intro*/
+    --intro-colour: #E8E8E8;
+    --highlight-colour: #F5C9F1;
+    --desc-colour: #c7c7c7;
+
+    /*nav*/
+    --word-colour: #E8E8E8;
+    --nav-highlight-colour: #F5C9F1;
+    --line-border-colour: #a1a1a1;
+
+    /*aesthetic*/
+    --light-dark-toggle: #ffffff;
+
+    /*boxes*/
+    --text-colour: #bbbbbb;
+    --highlight-hover: #93788f;
+    --tools-background: #404044;
+    --borders-woo: #ffffff;
+    --heading: #E8E8E8;
+    --after-heading: #777777;
+}
+
+/*light theme*/
+[data-light-mode] {
+    /*background*/
+    --body-bg: #ffdfcd;
+
+    --behind-border: #c48b96;
+    --behind-outline: #6c032c;
+    --behind-bg: #ffe8d3;
+
+    /*f8e0c5 d*/
+    /*F9F5E7 l*/
+
+    --spawn-border: #500707;
+    --spawn-outline: #a46a76;
+    --spawn-bg: #eaceba;
+
+    --experience-border: #cc8b98;
+    --experience-outline: #6c032c;
+    --experience-bg: #ffe8d3;
+
+    --creations-border: #a46a76;
+    --creations-outline: #520202;
+    --creations-bg: #eaceba;
+
+    /*intro*/
+    --intro-colour: #1f1f1f;
+    --highlight-colour: #755059;
+    --desc-colour: #252525;
+
+    /*nav*/
+    --word-colour: #000000;
+    --nav-highlight-colour: #561f3b;
+    --line-border-colour: #333333;
+
+    /*aeshetic*/
+    --light-dark-toggle: #1f1f1f;
+
+    /*boxes*/
+    --text-colour: #545454;
+    --highlight-hover: #be7fb3;
+    --tools-background: #ffd4d4;
+    --borders-woo: #000000;
+    --heading: #561f3b;
+    --after-heading: #561f3b;
+}

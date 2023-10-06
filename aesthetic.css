@@ -38,7 +38,7 @@
     fill: none;
     stroke-linecap: round;
     stroke-linejoin: round;
-    stroke: #ffffff;
+    stroke: var(--light-dark-toggle);
     stroke-width: 1;
     transform: translate3d(0, 0, 0);
     transition: all 0.2s ease;
@@ -55,10 +55,10 @@
     opacity: 1;
 }
 .aesthetic .check:hover svg {
-    stroke: #f5c9f1;
+    stroke: var(--nav-highlight-colour);
 }
 .aesthetic input[type="checkbox"]:checked + .check svg {
-    stroke: #f5c9f1;
+    stroke: var(--nav-highlight-colour);
     stroke-width: 1.5;
     background-color: unset;
 }
@@ -73,7 +73,7 @@
 }
 
 .aesthetic #theVibes {
-    color: #E8E8E8;
+    color: var(--word-colour);
     font-size: 23px;
     transition: all .4s;
     font-weight: 400;

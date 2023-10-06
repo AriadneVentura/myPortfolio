@@ -8,7 +8,7 @@
     height: 54%;
     position: absolute;
     left: 32vw;
-    top: 42vh;
+    top: 38vh;
 }
 
 .portfolio h2::after {
@@ -17,8 +17,8 @@
     width: 35vw;
     margin-top: -15px;
     height: 1px;
-    margin-left: 190px;
-    background-color: #777777;
+    margin-left: 170px;
+    background-color: var(--after-heading);
 }
 
 .projects {
@@ -47,7 +47,7 @@
 
     width: auto;
     height: 100%;
-    border: 1px solid #ffffff;
+    border: 1px solid var(--borders-woo);
 
 }
 
@@ -55,3 +55,4 @@
     filter: none;
     transition-duration: .3s;
 }
+
