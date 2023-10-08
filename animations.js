@@ -15,7 +15,7 @@ const reveal = () => {
     }
 }
 
-window.addEventListener("scroll", reveal);
+const scroll = () => window.addEventListener("scroll", reveal);
 
 const aestheticActivate = () => {
     const text = document.getElementById("theVibes");

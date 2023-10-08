@@ -107,7 +107,7 @@ nav .navlist .links li:hover .words {
 /*laptop screen*/
 @media only screen and (min-device-width: 1200px)  and (max-width: 1600px) {
     .navlist .aaicon {
-        margin-bottom: 45px;
+        margin-bottom: 115px;
     }
 
     nav .navlist .links li .border {

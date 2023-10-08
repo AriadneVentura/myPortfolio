@@ -11,8 +11,8 @@
     font-style: normal;
 }
 
-html {
-    scroll-behavior: smooth;
+html, body {
+    scroll-behavior: smooth; !important;
 }
 
 * {
@@ -41,21 +41,21 @@ body {
     overflow-y: scroll;
 }
 
-#behind_box {
-    /*position: fixed;*/
-    position: absolute;
+/*#behind_box {*/
+/*    !*position: fixed;*!*/
+/*    position: absolute;*/
 
-    width: 100%;
-    height: 100%;
-    left: 40%;
-    top: 5%;
-    /*819FED*/
-    border: 20px solid var(--behind-border);
-    outline: 1px solid var(--behind-outline);
-    float: left;
-    background-color: var(--behind-bg);
-    transition: all 0.3s;
-}
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    left: 40%;*/
+/*    top: 5%;*/
+/*    !*819FED*!*/
+/*    border: 20px solid var(--behind-border);*/
+/*    outline: 1px solid var(--behind-outline);*/
+/*    float: left;*/
+/*    background-color: var(--behind-bg);*/
+/*    transition: all 0.3s;*/
+/*}*/
 
 #spawn_box {
     /*position: fixed*/
@@ -145,6 +145,23 @@ footer div{
     100% {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+/*laptop screen*/
+@media only screen and (min-device-width: 1200px)  and (max-width: 1600px) {
+    #experience_box {
+        width: 60vw;
+        height: 83vh;
+        left: 35vw;
+        top: 168vh;
+    }
+
+    #creations_box {
+        width: 66vw;
+        height: 65vh;
+        left: 25vw;
+        top: 240vh;
     }
 }
 
