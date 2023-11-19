@@ -4,10 +4,10 @@
 
 .portfolio {
     display: inline-flex;
-    width: 55%;
+    width: 57%;
     height: 60%;
     position: absolute;
-    left: 32vw;
+    left: 30vw;
     top: 38vh;
 }
 
@@ -25,6 +25,8 @@
     position: relative;
     top: 10vh;
     overflow: hidden;
+    border-left: 1px solid var(--borders-woo);
+    border-right: 1px solid var(--borders-woo);
 }
 
 .projects {
