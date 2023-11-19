@@ -130,6 +130,14 @@ const slider = () => {
 
 }
 
+const carouselMovement = () => {
+    let cursor = document.getElementById("Cursor");
+    document.body.addEventListener("mousemove", (event) => {
+        // * by 0.7 for smoothness (apparently, it's not tht smooth tho)
+        cursor.style.transform = "translate3d(" + -(event.clientX * 0.7) + "px, 0px, 0px)"
+    });
+}
+
 const maze = () => {
     // 1. Start with a grid of unvisited cells.
     let dimensions = 20;

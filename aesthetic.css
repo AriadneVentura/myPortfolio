@@ -73,7 +73,7 @@
 }
 
 .aesthetic #theVibes {
-    color: var(--word-colour);
+    color: var(--nav-highlight-colour);
     font-size: 23px;
     transition: all .4s;
     font-weight: 400;

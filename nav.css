@@ -20,7 +20,7 @@ nav .navlist .links li .border {
     content: "";
     display: inline-block;
     margin-right: 10px;
-    height: 1px;
+    height: 2px;
     width: 2rem;
     background-color: var(--line-border-colour);
     transition-duration: .20s;

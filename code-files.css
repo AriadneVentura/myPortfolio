@@ -4,8 +4,8 @@
 
 .portfolio {
     display: inline-flex;
-    width: 100%;
-    height: 54%;
+    width: 55%;
+    height: 60%;
     position: absolute;
     left: 32vw;
     top: 38vh;
@@ -21,13 +21,16 @@
     background-color: var(--after-heading);
 }
 
+.wrapThisAgain {
+    position: relative;
+    top: 10vh;
+    overflow: hidden;
+}
+
 .projects {
     display: inline-flex;
     column-gap: 10px;
-    position: relative;
-    top: 10vh;
     height: 100%;
-    overflow: hidden;
 }
 
 .projects:hover {
