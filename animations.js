@@ -131,10 +131,49 @@ const slider = () => {
 }
 
 const carouselMovement = () => {
-    let cursor = document.getElementById("Cursor");
+    /*
+    I think what i need to do is split the rectangle into fractions of the number of photos i hav
+
+    Say i have 3 images, if the cursor is in 1/3 area then scroll to first image
+    2/3 area -> middle iamge
+    3/3 area -> third image
+     */
+
+    const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+    // width of the box is 66vw/2 = 33vw which is the center
+    const visibleSize = 66*vw/100;
+    const ratio = vw/visibleSize;
+
+    const numbImages = document.getElementById("Cursor").length;
+    const fractionWidth = visibleSize/numbImages;
+
+
+    var max = 1;
+    var min = 2;
+
+
+    const cursor = document.getElementById("Cursor");
+    const images = document.querySelectorAll(".a");
     document.body.addEventListener("mousemove", (event) => {
+        // if (event.clientX)
+
+        // check which fraction of the rectangle the mouse is in
+        // then scroll to that image
+
+        const move = (event.clientX * ratio);
+
+        // for eahc
+
+        const whichImage = Math.floor(event.clientX/fractionWidth);
+        console.log("eweg" + whichImage);
+        // const pos = images[whichImage].getAttribute("width");
+
+
+        // if (move < 0) {
+        //     move = 0;
+        // }
         // * by 0.7 for smoothness (apparently, it's not tht smooth tho)
-        cursor.style.transform = "translate3d(" + -(event.clientX * 0.7) + "px, 0px, 0px)"
+        cursor.style.transform = "translate3d(" + -(move) + "px, 0px, 0px)"
     });
 }
 
@@ -191,5 +230,6 @@ const maze = () => {
     ctx.fillRect(10, 10, 150, 100);
 
 }
+
 
 

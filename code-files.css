@@ -4,11 +4,15 @@
 
 .portfolio {
     display: inline-flex;
-    width: 57%;
+    width: 57vw;
     height: 60%;
     position: absolute;
     left: 30vw;
     top: 38vh;
+}
+
+.portfolio h2 {
+    right: 2vw;
 }
 
 .portfolio h2::after {
@@ -30,21 +34,13 @@
 }
 
 .projects {
-    display: inline-flex;
+    display: flex;
+    /*justify-content: center;*/
     column-gap: 10px;
     height: 100%;
 }
 
-.projects:hover {
-    right: 0;
-    -webkit-transition: all 11s;
-    -moz-transition: all 11s;
-    -ms-transition: all 11s;
-    -o-transition: all 11s;
-    transition: all 11s;
-}
-
-.a {
+.pics {
     filter: saturate(0) brightness(0.8);
     transition-property: filter;
     transition-duration: .6s;
@@ -53,10 +49,11 @@
     width: auto;
     height: 100%;
     border: 1px solid var(--borders-woo);
+    scroll-behavior: smooth;
 
 }
 
-.a:hover {
+.pics:hover {
     filter: none;
     transition-duration: .3s;
 }
