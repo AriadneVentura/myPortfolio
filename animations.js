@@ -159,9 +159,9 @@ const carouselMovement = () => {
             width += imgs[i].width;
         }
 
-
+        // width - the gap
+        // var move = width - ;
         // TODO make max scroll
-        // TODO make this shit smooth please, is it possible to scroll rather than snap? incrementally scroll? idk
         cursor.style.transform = "translate3d(" + -(width) + "px, 0px, 0px)"
 
 

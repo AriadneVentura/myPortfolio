@@ -12,7 +12,7 @@
 }
 
 .portfolio h2 {
-    right: 2vw;
+    right: 12vw;
 }
 
 .portfolio h2::after {
@@ -35,9 +35,10 @@
 
 .projects {
     display: flex;
-    /*justify-content: center;*/
     column-gap: 10px;
     height: 100%;
+    /*for the smoothness*/
+    transition: transform 1.5s;
 }
 
 .pics {
@@ -49,8 +50,9 @@
     width: auto;
     height: 100%;
     border: 1px solid var(--borders-woo);
-    /*liar */
-    /*scroll-behavior: smooth;*/
+
+    /*flex: 1 0 auto;*/
+    display: block;
 
 }
 
