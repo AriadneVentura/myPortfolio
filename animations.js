@@ -134,39 +134,35 @@ const carouselMovement = () => {
 
     const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
     const visibleSize = 66*vw/100;
+    const flexboxWidth = 57*vw/100;
 
     const imgs = document.getElementById("Cursor").getElementsByClassName("pics");
     const numbImages = imgs.length;
     const fractionWidth = visibleSize/numbImages;
     const cursor = document.getElementById("Cursor");
-    console.log(fractionWidth);
 
     document.getElementById("zoom").addEventListener("mousemove", (event) => {
-
-        // Jake said this: but idk how to do that i tried i will get back to it
-        //      using scrollLeft and scrollMax and making mouse percentage along the images correspond to the scrollMax
-
         // check which fraction of the rectangle the mouse is in, then scroll to that image
-        // -1 bc for some reaosn my math is wrong shut up
-        const whichImage = Math.floor(event.clientX/fractionWidth) -1;
+        const whichImage = Math.floor(event.x/fractionWidth) -1;
 
         let width = 0;
         // recursively add the pixels?
-        for (let i = 0; i<numbImages; i++) {
+        for (let i = 0; i < whichImage; i++) {
             if (i === whichImage) {
                 break
             }
+
             width += imgs[i].width;
         }
 
-        // width - the gap
-        // var move = width - ;
-        // TODO make max scroll
+        console.log(whichImage);
+        // this works... but at what cost
+        if (whichImage >= numbImages - 1) {
+            // find the final image and minus the negative space...i feel like this is not the right way to fix this
+            const negSpace = flexboxWidth - imgs[whichImage];
+            width -= negSpace;
+        }
         cursor.style.transform = "translate3d(" + -(width) + "px, 0px, 0px)"
-
-
-
-        // TODO later -> scroll on mouse speed
     });
 }
 
