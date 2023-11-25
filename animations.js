@@ -133,92 +133,42 @@ const slider = () => {
 const carouselMovement = () => {
 
     const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
-    const visibleSize = 66*vw/100;
-    const flexboxWidth = 57*vw/100;
 
-    const imgs = document.getElementById("Cursor").getElementsByClassName("pics");
+    const imgs =
+        document.getElementById("Cursor").getElementsByClassName("pics");
     const numbImages = imgs.length;
-    const fractionWidth = visibleSize/numbImages;
+
+
     const cursor = document.getElementById("Cursor");
+    const portfolio = document.getElementById("creations_box");
+    const lengthOfPortfolio = 66*vw/100;
 
-    document.getElementById("zoom").addEventListener("mousemove", (event) => {
-        // check which fraction of the rectangle the mouse is in, then scroll to that image
-        const whichImage = Math.floor(event.x/fractionWidth) -1;
 
-        let width = 0;
-        // recursively add the pixels?
-        for (let i = 0; i < whichImage; i++) {
-            if (i === whichImage) {
-                break
-            }
-
-            width += imgs[i].width;
+    let innerCarousel = 0;
+    for (let i = 0; i < numbImages; i++) {
+        if (i !== numbImages - 1) {
+            // The gap is 10px
+            innerCarousel += 10;
         }
+        innerCarousel += imgs[i].width;
+    }
 
-        console.log(whichImage);
-        // this works... but at what cost
-        if (whichImage >= numbImages - 1) {
-            // find the final image and minus the negative space...i feel like this is not the right way to fix this
-            const negSpace = flexboxWidth - imgs[whichImage];
-            width -= negSpace;
-        }
-        cursor.style.transform = "translate3d(" + -(width) + "px, 0px, 0px)"
+    portfolio.addEventListener("mousemove", (event) => {
+        const rect = event.target.getBoundingClientRect();
+        //x position within the element.
+        const x = event.clientX - rect.left;
+        const percentage = (x/lengthOfPortfolio) * 100;
+        const move = percentage * innerCarousel;
+
+
+        console.log(x, lengthOfPortfolio, percentage, move);
+
+        // TODO apply acceleration (value u want, += acceleration until u get to it, curve)
+        cursor.style.transform = "translate3d(" + -(move) + "px, 0px, 0px)";
     });
 }
 
-const maze = () => {
-    // 1. Start with a grid of unvisited cells.
-    let dimensions = 20;
-    let cells = [];
-    for (let x = 0; x < dimensions; x++ ) {
-        // initialize the empty rows, maze width = x + 1
-        cells[x] = []
-        // [[], [], [], [], [], []]
-        for (let y = 0; y < dimensions; y++) {
-            // create each cell in row we just made
-            // [[0, 0], [1, 0], [2, 0]]
-            // i think this is an object lol
-            let cell = {
-                x: x,
-                y: y,
-                // y, x?
-                index: [x, y],
-                status: "unvisited",
-                adjacents: [],
-                connections: []
-            };
-            cells[x][y] = cell;
-            // add to unvisited set
-            // unvisited.add(cell);
-            // add adjacents
-            if (cells[y - 1]) {
-                if (cells[y - 1][x]) {
-                    let up = cells[y - 1][x];
-                    cell.adjacents.push(up);
-                    up.adjacents.push(cell);
-                }
-            }
-
-
-        }
-
-
-    }
-    // 2. Create two empty sets, marking visited cells, and what we’ll call frontier cells.
-    // 3. Choose a random cell as the starting point, and add it to the visited set.
-    // 4. Add all unvisited cells that are adjacent to the current cell to the frontier set.
-    // 5. Choose a cell randomly from the frontier set and make it the current cell, removing it from the frontier set and adding it to the visited set.
-    // 6. Remove the wall between the current cell and a random adjacent cell that belongs to the visited set.
-    // 7.Repeat steps 4 through 6 until there are no more frontier cells.
-    const canvas = document.getElementById("canvas");
-    const ctx = canvas.getContext("2d");
-
-    // i want to use prims algorithm
-
-    ctx.fillStyle = "green";
-    ctx.fillRect(10, 10, 150, 100);
-
-}
+// Julia set https://en.wikipedia.org/wiki/Julia_set canvas
 
 
 
