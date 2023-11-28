@@ -134,41 +134,102 @@ const carouselMovement = () => {
 
     const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
 
-    const imgs =
-        document.getElementById("Cursor").getElementsByClassName("pics");
+    const imgs = document.getElementById("Cursor").getElementsByClassName("pics");
     const numbImages = imgs.length;
 
 
     const cursor = document.getElementById("Cursor");
-    const portfolio = document.getElementById("creations_box");
-    const lengthOfPortfolio = 66*vw/100;
+    const portfolio = document.getElementById("zoom");
+    const lengthOfPortfolio = 57*vw/100;
 
 
+    // Find the inner length of the carousel, including gaps
     let innerCarousel = 0;
     for (let i = 0; i < numbImages; i++) {
-        if (i !== numbImages - 1) {
-            // The gap is 10px
+        innerCarousel += parseInt(imgs[i].getAttribute("width"));
+        // Not the last image
+        if (i < numbImages - 1) {
+            // The gap is 10px, so add to the legnth
             innerCarousel += 10;
         }
-        innerCarousel += imgs[i].width;
     }
 
     portfolio.addEventListener("mousemove", (event) => {
         const rect = event.target.getBoundingClientRect();
         //x position within the element.
         const x = event.clientX - rect.left;
-        const percentage = (x/lengthOfPortfolio) * 100;
+        // percentage the cursor is through the creations box
+        const percentage = (x / lengthOfPortfolio);
         const move = percentage * innerCarousel;
 
-
-        console.log(x, lengthOfPortfolio, percentage, move);
+        console.log(x, percentage, move)
 
         // TODO apply acceleration (value u want, += acceleration until u get to it, curve)
         cursor.style.transform = "translate3d(" + -(move) + "px, 0px, 0px)";
     });
+
+    // // used to get the pixels rather than viewport width
+    // const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+    // const creationsBoxWidth = 66*vw/100;
+    // const flexboxWidth = 57*vw/100;
+    //
+    // const imgs = document.getElementById("Cursor").getElementsByClassName("pics");
+    // const numbImages = imgs.length;
+    // const fractionWidth = creationsBoxWidth/numbImages;
+    // const cursor = document.getElementById("Cursor");
+    //
+    // let max = 0;
+    // for (let i = 0; i<numbImages; i++) {
+    //     max += imgs[i].width;
+    // }
+    //
+    // document.getElementById("zoom").addEventListener("mousemove", (event) => {
+    //
+    //     // Jake said this: but idk how to do that i tried i will get back to it
+    //     //      using scrollLeft and scrollMax and making mouse percentage along the images correspond to the scrollMax
+    //
+    //     // check which fraction of the rectangle the mouse is in, then scroll to that image
+    //     // -1 bc for some reaosn my math is wrong shut up
+    //     const whichImage = Math.floor(event.clientX/fractionWidth) -1;
+    //
+    //     let width = 0;
+    //     // recursively add the pixels?
+    //     for (let i = 0; i<numbImages - 1; i++) {
+    //         if (i === whichImage) {
+    //             break
+    //         }
+    //         width += imgs[i].width;
+    //     }
+    //
+    //     // Find the max scroll that would keep the final image in view without going into negative space;
+    //
+    //
+    //     // width of the 'wrapThisAgain` box - the width of the last image to get the negative space
+    //     cursor.style.transform = "translate3d(" + -(width) + "px, 0px, 0px)";
+    //     console.log(whichImage);
+    //
+    //
+    //
+    //     // TODO later -> scroll on mouse speed
+    // });
 }
 
 // Julia set https://en.wikipedia.org/wiki/Julia_set canvas
+const juliaSet = () => {
+    // const canvas = document.getElementById("canvas").getContext("2d");
+    //
+    // canvas.style.width = 200/devicePixelRatio + "px";
+    // canvas.style.height = 100/devicePixelRatio + "px";
+    //
+    // // ctx.fillRect(2, 2, 1, 1);
+    //
+    //
+    // // choose R > 0 such that R**2 - R >= sqrt(cx**2 + cy**2)
+    // const r = 40;
+    // // for ()
+
+
+}
 
 
 

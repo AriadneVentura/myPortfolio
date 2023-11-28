@@ -18,19 +18,9 @@
     </head>
 
     <div id="behind_box"></div>
-<!--    <div id="behind_box"></div>-->
     <div id="spawn_box"></div>
     <div id="experience_box"></div>
     <div id="creations_box"></div>
-
-
-<!--    CHECKLIST-->
-<!--    - light mode styling-->
-<!--    - normalisation of slider-->
-<!--    - click images to make them flip and show what ive done-->
-<!--    - laptop styling (AGAIN)-->
-<!--    - 27 inch styling-->
-<!--    - mobile styling-->
 
     <body>
         <nav>
@@ -66,6 +56,10 @@
                 </div>
             </div>
         </nav>
+
+        <div class="animation">
+<!--            <canvas id="canvas" width="300" height="300"></canvas>-->
+        </div>
 
         <section class="intro-wrap">
             <div class="wrapper">
@@ -154,9 +148,9 @@
         </section>
 
         <section class="container reveal fade" id="#creations">
-            <div class="portfolio" data-scroll="target" id="zoom">
+            <div class="portfolio" data-scroll="target">
                 <h2 class="numbered-heading heading-font creations"><span class="numb">2 |</span> creations</h2>
-                <div class="wrapThisAgain">
+                <div class="wrapThisAgain" id="zoom">
                     <div class="projects" id="Cursor">
                         <img class="pics" src="thingies/nd.png" width="2880">
                         <img class="pics" src="thingies/scraggle.png" width="1184">
@@ -179,5 +173,5 @@
     <script>aestheticActivate()</script>
     <script>scroll()</script>
     <script>carouselMovement()</script>
-<!--    <script>maze()</script>-->
+<!--    <script>juliaSet()</script>-->
 </html>
