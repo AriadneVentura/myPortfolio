@@ -132,86 +132,55 @@ const slider = () => {
 
 const carouselMovement = () => {
 
-    const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+    document.addEventListener('DOMContentLoaded', () => {
+        const carousel = document.querySelector('.projects');
+        const images = document.querySelectorAll('.pics');
+        const numImages = images.length;
+        console.log( carousel.scrollWidth);
 
-    const imgs = document.getElementById("Cursor").getElementsByClassName("pics");
-    const numbImages = imgs.length;
+        document.addEventListener('mousemove', (e) => {
+            const mouseX = e.clientX;
+            const screenWidth = window.innerWidth;
+            const carouselWidth = 57/100 * screenWidth;
 
 
-    const cursor = document.getElementById("Cursor");
-    const portfolio = document.getElementById("zoom");
-    const lengthOfPortfolio = 57*vw/100;
+            // Calculate the index based on the mouse position
+            let index = Math.floor((mouseX / carouselWidth) * numImages);
+            if (index > numImages)
+            {
+                index = numImages - 1;
+            }
 
+            // Calculate the scroll position
+            // TODO total - scroll?
+            let scrollPosition;
 
-    // Find the inner length of the carousel, including gaps
-    let innerCarousel = 0;
-    for (let i = 0; i < numbImages; i++) {
-        innerCarousel += parseInt(imgs[i].getAttribute("width"));
-        // Not the last image
-        if (i < numbImages - 1) {
-            // The gap is 10px, so add to the legnth
-            innerCarousel += 10;
-        }
-    }
+            if (index === 0) {
+                // Scroll to the start for the first image
+                scrollPosition = 0;
+            } else if (index === numImages - 1) {
+                // Scroll to the end for the last image
+                scrollPosition = carousel.scrollWidth - carouselWidth;
+            } else {
+                // Scroll to center the current image
+                // const imageCenter = (index + 0.5) * images[index].clientWidth;
+                // console.log(imageCenter);
+                // scrollPosition = imageCenter - (carouselWidth / 2);
+                scrollPosition = ((index / numImages) * carousel.scrollWidth);
+            }
 
-    portfolio.addEventListener("mousemove", (event) => {
-        const rect = event.target.getBoundingClientRect();
-        //x position within the element.
-        const x = event.clientX - rect.left;
-        // percentage the cursor is through the creations box
-        const percentage = (x / lengthOfPortfolio);
-        const move = percentage * innerCarousel;
+            console.log(index);
 
-        console.log(x, percentage, move)
+            // if (index === 1)
+            // {
+            //     console.log(images[index].width)
+            //     console.log(scrollPosition);
+            // }
 
-        // TODO apply acceleration (value u want, += acceleration until u get to it, curve)
-        cursor.style.transform = "translate3d(" + -(move) + "px, 0px, 0px)";
+            // Apply the scroll position
+            carousel.style.transform = `translateX(${-scrollPosition}px)`;
+        });
     });
-
-    // // used to get the pixels rather than viewport width
-    // const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
-    // const creationsBoxWidth = 66*vw/100;
-    // const flexboxWidth = 57*vw/100;
-    //
-    // const imgs = document.getElementById("Cursor").getElementsByClassName("pics");
-    // const numbImages = imgs.length;
-    // const fractionWidth = creationsBoxWidth/numbImages;
-    // const cursor = document.getElementById("Cursor");
-    //
-    // let max = 0;
-    // for (let i = 0; i<numbImages; i++) {
-    //     max += imgs[i].width;
-    // }
-    //
-    // document.getElementById("zoom").addEventListener("mousemove", (event) => {
-    //
-    //     // Jake said this: but idk how to do that i tried i will get back to it
-    //     //      using scrollLeft and scrollMax and making mouse percentage along the images correspond to the scrollMax
-    //
-    //     // check which fraction of the rectangle the mouse is in, then scroll to that image
-    //     // -1 bc for some reaosn my math is wrong shut up
-    //     const whichImage = Math.floor(event.clientX/fractionWidth) -1;
-    //
-    //     let width = 0;
-    //     // recursively add the pixels?
-    //     for (let i = 0; i<numbImages - 1; i++) {
-    //         if (i === whichImage) {
-    //             break
-    //         }
-    //         width += imgs[i].width;
-    //     }
-    //
-    //     // Find the max scroll that would keep the final image in view without going into negative space;
-    //
-    //
-    //     // width of the 'wrapThisAgain` box - the width of the last image to get the negative space
-    //     cursor.style.transform = "translate3d(" + -(width) + "px, 0px, 0px)";
-    //     console.log(whichImage);
-    //
-    //
-    //
-    //     // TODO later -> scroll on mouse speed
-    // });
 }
 
 // Julia set https://en.wikipedia.org/wiki/Julia_set canvas
