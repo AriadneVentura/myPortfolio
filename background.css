@@ -108,8 +108,11 @@ section {
     min-height: 60vh;
 }
 
-.reveal {
+.container {
     position: relative;
+}
+
+.reveal {
     opacity: 0;
 }
 

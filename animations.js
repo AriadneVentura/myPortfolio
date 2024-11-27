@@ -130,30 +130,85 @@ const slider = () => {
 
 }
 
+// const carouselMovement = () => {
+//     document.addEventListener("DOMContentLoaded", () => {
+//         const carousel = document.querySelector(".projects");
+//         const images = document.querySelectorAll(".pics");
+//         const creationsBox = document.querySelector("#creations_box");
+//
+//         // Calculate total width of the carousel, accounting for borders and gaps
+//         const borderWidth = 1; // 1px left and right borders on carousel
+//         const imageBorderWidth = 1; // 1px border on each image
+//         const columnGap = 10; // 10px gap between images
+//         const totalImageWidth = Array.from(images).reduce((total, img) => total + img.offsetWidth, 0);
+//         const totalGaps = (images.length - 1) * columnGap; // Total space occupied by gaps between images
+//         const totalCarouselWidth = totalImageWidth + (images.length * imageBorderWidth * 2) + totalGaps + (borderWidth * 2); // Total width
+//
+//         console.log(totalCarouselWidth)
+//         creationsBox.addEventListener("mousemove", (e) => {
+//             const boxRect = creationsBox.getBoundingClientRect();
+//             let mouseX = e.clientX - boxRect.left; // Mouse position relative to creations_box
+//             // Clamp mouseX to the bounds of creations_box
+//             mouseX = Math.max(0, Math.min(mouseX, boxRect.width));
+//             const boxWidth = boxRect.width;
+//
+//             // Calculate scrollable width (total carousel width minus visible width)
+//             const scrollableWidth = totalCarouselWidth - boxWidth;
+//
+//             // Calculate scroll position based on mouse position
+//             const scrollPosition = (mouseX / boxWidth) * scrollableWidth;
+//
+//             // Ensure scroll position doesn't exceed boundaries
+//             // const clampedScrollPosition = Math.max(0, Math.min(scrollPosition, scrollableWidth));
+//
+//             console.log(scrollPosition)
+//
+//             // Apply the scroll position
+//             carousel.style.transform = `translateX(${scrollPosition}px)`;
+//         });
+//     });
+
 const carouselMovement = () => {
 
     document.addEventListener('DOMContentLoaded', () => {
         const carousel = document.querySelector('.projects');
         const images = document.querySelectorAll('.pics');
+        const creationsBox = document.querySelector('#creations_box');
         const numImages = images.length;
-        console.log( carousel.scrollWidth);
+
+        const borderWidth = 1; // 1px left and right borders on carousel
+        const imageBorderWidth = 1; // 1px border on each image
+        const columnGap = 10; // 10px gap between images
+
+        // // Calculate total width of images, gaps, and borders
+        // const totalImageWidth = Array.from(images).reduce((total, img) => total + img.offsetWidth, 0);
+        // const totalGaps = (numImages - 1) * columnGap; // Total space for gaps
+        // const totalBorders = numImages * imageBorderWidth * 2; // Borders around all images
+        // const totalCarouselWidth = totalImageWidth + totalGaps + totalBorders + borderWidth * 2; // Full width of carousel
+
+
+        // Calculate the total width of all images (this allows the images to show fully)
+        let totalImageWidth = 0;
+        images.forEach(image => {
+            totalImageWidth += image.offsetWidth;
+        });
+
 
         document.addEventListener('mousemove', (e) => {
-            const mouseX = e.clientX;
-            const screenWidth = window.innerWidth;
-            const carouselWidth = 57/100 * screenWidth;
+            const boxRect = creationsBox.getBoundingClientRect();
+            let mouseX = e.clientX - boxRect.left; // Mouse position relative to the creations_box
+            // Clamp mouseX to the bounds of creations_box
+            mouseX = Math.max(0, Math.min(mouseX, boxRect.width));
+            const boxWidth = boxRect.width; // Width of creations_box
+            const carouselWidth = boxWidth; // Match carousel width to creations_box width
 
-
-            // Calculate the index based on the mouse position
-            let index = Math.floor((mouseX / carouselWidth) * numImages);
-            if (index > numImages)
-            {
-                index = numImages - 1;
-            }
+            // Calculate the index based on the mouse position (box?)
+            let index = Math.floor((mouseX / boxWidth) * numImages);
+            index = Math.max(0, Math.min(index, numImages - 1)); // Ensure index is within valid bounds
 
             // Calculate the scroll position
-            // TODO total - scroll?
             let scrollPosition;
+            console.log(index)
 
             if (index === 0) {
                 // Scroll to the start for the first image
@@ -162,42 +217,13 @@ const carouselMovement = () => {
                 // Scroll to the end for the last image
                 scrollPosition = carousel.scrollWidth - carouselWidth;
             } else {
-                // Scroll to center the current image
-                // const imageCenter = (index + 0.5) * images[index].clientWidth;
-                // console.log(imageCenter);
-                // scrollPosition = imageCenter - (carouselWidth / 2);
                 scrollPosition = ((index / numImages) * carousel.scrollWidth);
             }
-
-            console.log(index);
-
-            // if (index === 1)
-            // {
-            //     console.log(images[index].width)
-            //     console.log(scrollPosition);
-            // }
 
             // Apply the scroll position
             carousel.style.transform = `translateX(${-scrollPosition}px)`;
         });
     });
-}
-
-// Julia set https://en.wikipedia.org/wiki/Julia_set canvas
-const juliaSet = () => {
-    // const canvas = document.getElementById("canvas").getContext("2d");
-    //
-    // canvas.style.width = 200/devicePixelRatio + "px";
-    // canvas.style.height = 100/devicePixelRatio + "px";
-    //
-    // // ctx.fillRect(2, 2, 1, 1);
-    //
-    //
-    // // choose R > 0 such that R**2 - R >= sqrt(cx**2 + cy**2)
-    // const r = 40;
-    // // for ()
-
-
 }
 
 
