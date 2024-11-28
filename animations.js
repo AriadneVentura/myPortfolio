@@ -175,17 +175,7 @@ const carouselMovement = () => {
         const images = document.querySelectorAll('.pics');
         const creationsBox = document.querySelector('#creations_box');
         const numImages = images.length;
-
-        const borderWidth = 1; // 1px left and right borders on carousel
-        const imageBorderWidth = 1; // 1px border on each image
         const columnGap = 10; // 10px gap between images
-
-        // // Calculate total width of images, gaps, and borders
-        // const totalImageWidth = Array.from(images).reduce((total, img) => total + img.offsetWidth, 0);
-        // const totalGaps = (numImages - 1) * columnGap; // Total space for gaps
-        // const totalBorders = numImages * imageBorderWidth * 2; // Borders around all images
-        // const totalCarouselWidth = totalImageWidth + totalGaps + totalBorders + borderWidth * 2; // Full width of carousel
-
 
         // Calculate the total width of all images (this allows the images to show fully)
         let totalImageWidth = 0;
@@ -196,30 +186,57 @@ const carouselMovement = () => {
 
         document.addEventListener('mousemove', (e) => {
             const boxRect = creationsBox.getBoundingClientRect();
-            let mouseX = e.clientX - boxRect.left; // Mouse position relative to the creations_box
+            // Mouse position relative to the creations_box
+            let mouseX = e.clientX - boxRect.left;
+            // Width of creations_box
+            const boxWidth = boxRect.width;
             // Clamp mouseX to the bounds of creations_box
-            mouseX = Math.max(0, Math.min(mouseX, boxRect.width));
-            const boxWidth = boxRect.width; // Width of creations_box
-            const carouselWidth = boxWidth; // Match carousel width to creations_box width
+            mouseX = Math.max(0, Math.min(mouseX, boxWidth));
+            const carouselWidth = document.getElementById("zoom").offsetWidth;
 
             // Calculate the index based on the mouse position (box?)
             let index = Math.floor((mouseX / boxWidth) * numImages);
             index = Math.max(0, Math.min(index, numImages - 1)); // Ensure index is within valid bounds
 
             // Calculate the scroll position
-            let scrollPosition;
-            console.log(index)
+            // Find which image is currently under the cursor
+            let scrollPosition = 0;
+            // The starting X-coordinate of the current image (its left edge) within the carousel, relative to the creationsBox.
+            let currentX = 0;
 
             if (index === 0) {
                 // Scroll to the start for the first image
                 scrollPosition = 0;
+                console.log(index)
             } else if (index === numImages - 1) {
                 // Scroll to the end for the last image
                 scrollPosition = carousel.scrollWidth - carouselWidth;
-            } else {
-                scrollPosition = ((index / numImages) * carousel.scrollWidth);
-            }
+                console.log(index)
 
+            } else {
+                for (let i = 0; i < numImages; i++) {
+                    const image = images[index];
+                    const imageWidth = image.offsetWidth;
+                    // The ending X-coordinate of the current image (its right edge),
+                    const nextX = currentX + imageWidth + columnGap;
+
+                    if (mouseX >= currentX && mouseX <= nextX) {
+                        // Calculate the center of the current image
+                        const imageCenter = currentX + imageWidth / 2;
+
+                        // Scroll so that the image center aligns with the cursor
+                        const scrollCenter = imageCenter / 2;
+                        console.log(index, scrollCenter)
+
+                        // scrollPosition = Math.max(0, Math.min(scrollCenter, carouselWidth - boxWidth));
+                        scrollPosition = scrollCenter;
+                        break;
+                    }
+
+                    currentX = nextX; // Update the starting X position for the next image
+                }
+
+            }
             // Apply the scroll position
             carousel.style.transform = `translateX(${-scrollPosition}px)`;
         });
