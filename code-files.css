@@ -37,7 +37,8 @@
     display: flex;
     column-gap: 10px;
     height: 100%;
-    transition: transform 0.5s ease-in-out;
+    /*transition: transform 0.5s ease-in-out;*/
+    transition: transform 0.5s ease;
 }
 
 .pics {
