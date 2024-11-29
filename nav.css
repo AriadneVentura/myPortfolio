@@ -62,7 +62,7 @@ nav .navlist .links li:hover .words {
 
     cursor: pointer;
     position: absolute;
-    bottom: 13vh;
+    bottom: 11vh;
     /*transition: 50ms;*/
     margin-bottom: 95px;
     left: -6px;

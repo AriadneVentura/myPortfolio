@@ -62,9 +62,9 @@ body {
     position: absolute;
 
     width: 66vw;
-    height: 88vh;
+    height: 82vh;
     left: 27%;
-    top: 65vh;
+    top: 5vh;
     border: 2px solid var(--spawn-border);
     outline: 12px solid var(--spawn-outline);
     float: left;
@@ -79,7 +79,7 @@ body {
     width: 55vw;
     height: 80vh;
     left: 40vw;
-    top: 160vh;
+    top: 25vh;
     border: 15px solid var(--experience-border);
     outline: 1px solid var(--experience-outline);
 
@@ -96,7 +96,7 @@ body {
     width: 66vw;
     height: 65vh;
     left: 25vw;
-    top: 230vh;
+    top: 24vh;
     border: 15px solid var(--creations-border);
     outline: 2px solid var(--creations-outline);
     float: left;
@@ -126,7 +126,7 @@ section {
 
 footer {
     position: relative;
-    top: 50vh;
+    top: 40vh;
     width: 100%;
     height: 5vw;
     left: 10vw;

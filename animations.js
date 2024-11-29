@@ -130,56 +130,6 @@ const slider = () => {
 
 }
 
-// const carouselMovement = () => {
-//     document.addEventListener('DOMContentLoaded', () => {
-//         const carousel = document.querySelector('.wrapThisAgain');
-//         const track = document.querySelector('.projects');
-//         const images = document.querySelectorAll('.pics');
-//         const creationsBox = document.querySelector('#creations_box');
-//
-//         const columnGap = 10; // Spacing between images
-//         let totalImageWidth = 0;
-//
-//         // Calculate total width of all images and gaps
-//         images.forEach(image => {
-//             totalImageWidth += image.offsetWidth + columnGap;
-//         });
-//
-//         // Mousemove event listener
-//         carousel.addEventListener('mousemove', (e) => {
-//             const boxRect = creationsBox.getBoundingClientRect();
-//             const boxWidth = boxRect.width;
-//             let mouseX = e.clientX - boxRect.left; // Mouse position relative to carousel
-//             // Clamp mouseX to the bounds of creations_box
-//             mouseX = Math.max(0, Math.min(mouseX, boxWidth));
-//             const boxCenter = boxRect.width / 2;
-//
-//             // Find the image closest to the cursor
-//             let closestImageIndex = 0;
-//             let minDistance = Infinity;
-//
-//             images.forEach((image, index) => {
-//                 const imageCenter = image.offsetLeft + image.offsetWidth / 2;
-//                 const distance = Math.abs(imageCenter - mouseX);
-//                 if (distance < minDistance) {
-//                     minDistance = distance;
-//                     closestImageIndex = index;
-//                 }
-//             });
-//
-//             // Scroll so the closest image's center aligns with the cursor
-//             const closestImage = images[closestImageIndex];
-//             const imageCenter = closestImage.offsetLeft + closestImage.offsetWidth / 2;
-//             const scrollOffset = imageCenter - boxCenter;
-//
-//             track.style.transform = `translateX(${-scrollOffset}px)`;
-//         });
-//     });
-// }
-
-// TODO julia set canvas
-// On Hover, click on program w
-
 const carouselMovement = () => {
 
     document.addEventListener('DOMContentLoaded', () => {
@@ -187,15 +137,13 @@ const carouselMovement = () => {
         const images = document.querySelectorAll('.pics');
         const creationsBox = document.querySelector('#creations_box');
         const numImages = images.length;
-        const columnGap = 10; // 10px gap between images
 
-        // Calculate the total width of all images (this allows the images to show fully)
         let totalImageWidth = 0;
         images.forEach(image => {
             totalImageWidth += image.offsetWidth;
         });
 
-
+        let scrollPosition = 0;
         document.addEventListener('mousemove', (e) => {
             const boxRect = creationsBox.getBoundingClientRect();
             // Mouse position relative to the creations_box
@@ -208,11 +156,10 @@ const carouselMovement = () => {
 
             // Calculate the index (aka image to scroll to) based on the mouse position
             let index = Math.floor((mouseX / boxWidth) * numImages);
-            index = Math.max(0, Math.min(index, numImages - 1)); // Ensure index is within valid bounds
+            // Ensure index is within valid bounds
+            index = Math.max(0, Math.min(index, numImages - 1));
 
-            let scrollPos = 0;
-
-            let scrollPosition = 0;
+            // let scrollPosition = 0;
             if (index === 0) {
                 // Scroll to the start for the first image
                 scrollPosition = 0;
@@ -224,42 +171,12 @@ const carouselMovement = () => {
                 const currentX = images[index].offsetLeft;
                 // Width of the current image
                 const imageWidth = images[index].offsetWidth;
-                // The ending X-coordinate of the current image (its right edge),
-                const nextX = currentX + imageWidth + columnGap;
-
-                // Calculate the center of the current image
-                const imageCenter = Math.floor(currentX + imageWidth / 2);
-
-                // Only update scroll position if outside the bounds to prevent excess jittering
-                // if (mouseX < currentX || mouseX > nextX) {
-                //     // Align the center of the image with the cursor's position
-                //     // scrollPosition = imageCenter - mouseX;
-                //
-                //     scrollPosition = imageCenter - mouseX;
-                //
-                // }
-
-                if (mouseX < currentX || mouseX > nextX) {
-                    // Store the previous scroll position
-                    const previousScrollPosition = scrollPos;
-
-                    // Align the center of the image with the cursor's position
-                    scrollPos = imageCenter - mouseX;
-
-                    //  directional check to prevent reverse movement
-                    if ((scrollPos > previousScrollPosition && mouseX < imageCenter) ||
-                        (scrollPos < previousScrollPosition && mouseX > imageCenter)) {
-                        scrollPos = previousScrollPosition; // Cancel out the incorrect direction
-                    }
-                }
-
-                carousel.style.transform = `translateX(${-scrollPos}px)`;
-
-
+                // Calculate the center of the current image TODO this is still kind of buggy (index 1 aka pic 2)
+                const imageCenter = currentX + imageWidth / 2;
+                scrollPosition = imageCenter - boxWidth / 2;
             }
-            // Apply the scroll position
-            // smoothScrollTo(scrollPosition);
-            console.log(index, scrollPosition)
+
+            // // Apply the scroll position
             carousel.style.transform = `translateX(${-scrollPosition}px)`;
         });
     });

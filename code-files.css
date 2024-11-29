@@ -7,12 +7,13 @@
     width: 57vw;
     height: 60%;
     position: absolute;
-    left: 30vw;
-    top: 38vh;
+    left: 4vw;
+    top: 8vh;
 }
 
 .portfolio h2 {
     right: 12vw;
+    position: absolute;
 }
 
 .portfolio h2::after {
