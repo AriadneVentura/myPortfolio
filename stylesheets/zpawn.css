@@ -104,11 +104,6 @@
 
 /*laptop screen*/
 @media only screen and (min-device-width: 1200px) and (max-width: 1600px) {
-    .zpawn {
-        /*left: 34vw;*/
-        top: 20vh;
-    }
-
     .about p {
         font-size: 1.1rem;
         font-size: 1.1rem;
@@ -117,6 +112,16 @@
     .zpawn h2::after {
         width: 24vw;
         margin-top: -20px;
+    }
+
+    .zpawn .selfie {
+        position: relative;
+        top: -2vh;
+        left: -3vw;
+    }
+
+    .zpawn .logos {
+        left: 2vw;
     }
 }
 

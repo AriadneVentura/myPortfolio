@@ -60,13 +60,10 @@
 .pics:hover {
     filter: none;
     transition-duration: .3s;
+    cursor: pointer;
 }
 
 
 /*laptop screen*/
 @media only screen and (min-device-width: 1200px)  and (max-width: 1600px) {
-    .portfolio {
-        left: 32vw;
-        top: 50vh;
-    }
 }

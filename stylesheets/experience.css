@@ -77,11 +77,6 @@
 
 /*laptop screen*/
 @media only screen and (min-device-width: 1200px)  and (max-width: 1600px) {
-    .expert {
-        left: 41vw;
-        top: 48vh;
-    }
-
     .content h3 {
         font-size: 2.2rem;
         margin-bottom: unset;
