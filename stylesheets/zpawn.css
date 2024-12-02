@@ -127,29 +127,33 @@
 /*phone*/
 @media only screen and (max-width: 600px) {
     #spawn {
-        min-height: 70vh;
+        padding: unset;
     }
 
     .zpawn {
-        /*position: relative;*/
-        display: unset;
-        flex-direction: unset;
+        display: flex;
+        flex-direction: column;
         left: unset;
         top: unset;
+        gap: 10px;
     }
 
     .zpawn h2::after {
-        /*width: 42vw;*/
+        content: none;
+        width: unset;
+        margin-left: unset;
     }
 
     .zpawn .logos {
         gap: 10px;
         /*position: relative;*/
+        top: unset;
     }
 
     .about p {
         font-size: 1rem;
         font-family: "NTR", sans-serif;
+        max-width: unset;
     }
 
     .zpawn .selfie {

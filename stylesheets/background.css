@@ -144,8 +144,8 @@ footer div{
     .mobile-style {
         display: flex;
         flex-direction: column;
-        gap: 20px;
-        width: 85vw;
+        gap: 10px;
+        width: 80vw;
         margin: 0 auto;
     }
 

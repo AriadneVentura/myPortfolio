@@ -100,7 +100,7 @@
 @media only screen and (max-width: 600px) {
     #experience
     {
-        min-height: 90vh;
+        padding: unset;
     }
 
     .expert {
@@ -112,13 +112,15 @@
     }
 
     .expert h2::after {
-        /*width: 28vw;*/
-        margin-top: -18px;
-        margin-left: 160px;
+        content: none;
+        width: unset;
+        margin-left: unset;
     }
 
     .content h3 {
-        font-size: 1.8rem;
+        font-size: 2rem;
+        margin-top: unset;
+        margin-bottom: 10px;
     }
 
     .content h3 a {
@@ -129,6 +131,7 @@
     .content li {
         margin-left: unset;
         font-size: 1rem;
+        max-width: unset;
     }
 
     .content li::before {
@@ -137,7 +140,7 @@
 
     .tools {
         display: grid;
-        grid-template-columns: repeat(1,minmax(150px,10px));
+        grid-template-columns: repeat(2,minmax(150px,10px));
         column-gap: 10px;
     }
 

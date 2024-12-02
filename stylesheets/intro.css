@@ -93,7 +93,6 @@
     }
 
     .intro-wrap {
-        min-height: 35vh;
         padding: unset;
     }
     .intro-wrap .wrapper {
@@ -117,7 +116,9 @@
         top: unset;
         text-align: center;
         margin-top: unset;
-        /*max-width: 70vw;*/
+        max-width: unset;
+        z-index: unset;
+        position: unset;
     }
 
     .title {
