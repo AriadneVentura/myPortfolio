@@ -98,14 +98,23 @@
 }
 
 @media only screen and (max-width: 600px) {
+    #experience
+    {
+        margin: 0 auto;
+        width: 78vw;
+    }
+
     .expert {
-        left: 10vw;
-        top: 10vh;
+        position: relative;
+        display: unset;
+        flex-direction: unset;
+        left: unset;
+        top: unset;
     }
 
     .expert h2::after {
-        width: 36vw;
-        margin-top: -20px;
+        width: 28vw;
+        margin-top: -18px;
         margin-left: 160px;
     }
 
@@ -119,34 +128,34 @@
     }
 
     .content li {
-        margin-left: 15px;
+        margin-left: unset;
         font-size: 1rem;
-        max-width: 85%;
+        max-width: 100%;
+    }
+
+    .content li::before {
+        display: none;
     }
 
     .tools {
         display: grid;
         grid-template-columns: repeat(2,minmax(150px,10px));
-    }
-
-    .tools li::before {
-        left: 0;
+        column-gap: 10px;
     }
 
     .tools li {
-        margin-left: 30px;
         padding: 5px 5px;
         text-align: center;
     }
 }
 
 /*dumb iphone specific styling */
-@media only screen and (max-width: 375px) {
-    .expert {
-        top: 22vh;
-    }
+/*@media only screen and (max-width: 375px) {*/
+/*    .expert {*/
+/*        top: 22vh;*/
+/*    }*/
 
-    .expert h2::after {
-        margin-left: 175px;
-    }
-}
+/*    .expert h2::after {*/
+/*        margin-left: 175px;*/
+/*    }*/
+/*}*/

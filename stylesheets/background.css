@@ -169,26 +169,54 @@ footer div{
 }
 
 @media only screen and (max-width: 600px) {
+    .mobile-style {
+        display: flex;
+        flex-direction: column;
+    }
+
     section {
-        min-height: 45vh;
+        height: auto;
+        min-height: fit-content;
     }
 
     #behind_box {
-        /*height: 400vh;*/
-        /*left: 85%;*/
         display: none;
     }
 
     #spawn_box {
-        display: none;
+        border: unset;
+        outline: unset;
+        background-color:unset;
+        width: unset;
+        height: unset;
+        left: unset;
+        top: unset;
+        position: unset;
+        right: unset;
     }
 
     #experience_box {
-        display: none;
+        border: unset;
+        outline: unset;
+        background-color:unset;
+        width: unset;
+        height: unset;
+        left: unset;
+        top: unset;
+        position: unset;
+        right: unset;
     }
 
     #creations_box {
-        display: none;
+        border: unset;
+        outline: unset;
+        background-color:unset;
+        width: unset;
+        height: unset;
+        left: unset;
+        top: unset;
+        position: unset;
+        right: unset;
     }
 
     .reveal {
@@ -205,5 +233,15 @@ footer div{
         -ms-animation: fadein 2s; /* Internet Explorer */
         -o-animation: fadein 2s; /* Opera < 12.1 */
         animation: fadein 2s;
+        overflow-x: hidden;
+    }
+
+    footer {
+        width: 80vw;
     }
 }
+
+/*TODO carousel*/
+/*TODO carousel w info*/
+/*TODO iphone styling*/
+/*TODO ipad styling*/

@@ -67,3 +67,14 @@
 /*laptop screen*/
 @media only screen and (min-device-width: 1200px)  and (max-width: 1600px) {
 }
+
+/*phone*/
+@media only screen and (max-width: 600px) {
+    .portfolio {
+        display: none;
+    }
+
+    #creations {
+        min-height: unset;
+    }
+}

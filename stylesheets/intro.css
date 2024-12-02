@@ -4,36 +4,26 @@
     z-index: 5;
 
     position: absolute;
-    /*font-family: "CardinalFruit", Serif;*/
 }
 
 .wrapper .static-txt{
     color: var(--intro-colour);
     font-size: 4.9rem;
     font-family: "CardinalFruit", Serif;
-    /*display: inline-block;*/
-    /*height: 5rem;*/
 }
 
 #lol {
     color: var(--highlight-colour);
-    /*font-size: 5.5rem;*/
-    /*display: inline-block;*/
     font-family: "CardinalFruit", Serif;
 
 }
-/*  USE REM FOR FONTS */
 
 #lol::after{
     content: "";
     position: relative;
     display: inline-block;
-    /*left: 0;*/
     top: 1vh;
-    /*top: -16px;*/
     height: 5.5rem;
-    /*background: #5E5E5E;*/
-    /*font-size: 5.5rem;*/
     border-left: 4px solid var(--highlight-colour);
     animation: cursor .5s infinite alternate;
 }
@@ -114,6 +104,14 @@
 
     .wrapper .static-txt {
         font-size: 2.8rem;
+        text-align: center;
+    }
+
+    .wrapper {
+        left: unset;
+        top: unset;
+        z-index: unset;
+        position: unset;
     }
 
     .intro {
@@ -121,11 +119,10 @@
         left: unset;
         top: unset;
         text-align: center;
-        max-width: 80%;
+        max-width: 80vw;
     }
     .title {
         font-size: 1.4rem;
-        margin-bottom: 30px;
     }
 
     .description {

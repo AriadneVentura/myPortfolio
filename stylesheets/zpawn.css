@@ -128,32 +128,37 @@
 /*phone*/
 @media only screen and (max-width: 600px) {
     #spawn {
-        min-height: 65vh;
+        margin: 0 auto;
+        width: 78vw;
+        min-height: unset;
     }
 
     .zpawn {
-        left: 10vw;
-        top: 10vh;
+        position: relative;
         display: unset;
         flex-direction: unset;
+        left: unset;
+        top: unset;
     }
 
-    .zpawn h2::after {
-        width: 49vw;
-        margin-top: -20px;
-    }
-
-    .zpawn .about-image .logos {
-        top: -12vh;
-        left: 35vw;
+    .zpawn h2 {
         margin-top: 20px;
-        position: absolute;
+        margin-bottom: 20px;
+    }
+    .zpawn h2::after {
+        width: 42vw;
+    }
+
+    .zpawn .logos {
+        left: 22vw;
+        gap: 10px;
+        position: relative;
     }
 
     .about p {
         font-size: 1rem;
         font-family: "NTR", sans-serif;
-        max-width: 90%;
+        max-width: 80vw;
     }
 
     .zpawn .selfie {
@@ -162,13 +167,14 @@
 }
 
 /*dumb iphone specific styling */
-@media only screen and (max-width: 375px) {
-    .zpawn {
-        top: 20vh;
-    }
+/*@media only screen and (max-width: 375px) {*/
+/*    .zpawn {*/
+/*        !*top: 10vh;*!*/
 
-    .zpawn h2::after {
-        margin-top: -20px;
-        margin-left: 120px;
-    }
-}
+/*    }*/
+
+/*    .zpawn h2::after {*/
+/*        margin-top: -20px;*/
+/*        margin-left: 120px;*/
+/*    }*/
+/*}*/
