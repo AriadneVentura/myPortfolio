@@ -100,12 +100,11 @@
 @media only screen and (max-width: 600px) {
     #experience
     {
-        margin: 0 auto;
-        width: 78vw;
+        min-height: 90vh;
     }
 
     .expert {
-        position: relative;
+        /*position: relative;*/
         display: unset;
         flex-direction: unset;
         left: unset;
@@ -113,7 +112,7 @@
     }
 
     .expert h2::after {
-        width: 28vw;
+        /*width: 28vw;*/
         margin-top: -18px;
         margin-left: 160px;
     }
@@ -130,7 +129,6 @@
     .content li {
         margin-left: unset;
         font-size: 1rem;
-        max-width: 100%;
     }
 
     .content li::before {
@@ -139,7 +137,7 @@
 
     .tools {
         display: grid;
-        grid-template-columns: repeat(2,minmax(150px,10px));
+        grid-template-columns: repeat(1,minmax(150px,10px));
         column-gap: 10px;
     }
 

@@ -106,7 +106,6 @@
 @media only screen and (min-device-width: 1200px) and (max-width: 1600px) {
     .about p {
         font-size: 1.1rem;
-        font-size: 1.1rem;
     }
 
     .zpawn h2::after {
@@ -128,37 +127,29 @@
 /*phone*/
 @media only screen and (max-width: 600px) {
     #spawn {
-        margin: 0 auto;
-        width: 78vw;
-        min-height: unset;
+        min-height: 70vh;
     }
 
     .zpawn {
-        position: relative;
+        /*position: relative;*/
         display: unset;
         flex-direction: unset;
         left: unset;
         top: unset;
     }
 
-    .zpawn h2 {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
     .zpawn h2::after {
-        width: 42vw;
+        /*width: 42vw;*/
     }
 
     .zpawn .logos {
-        left: 22vw;
         gap: 10px;
-        position: relative;
+        /*position: relative;*/
     }
 
     .about p {
         font-size: 1rem;
         font-family: "NTR", sans-serif;
-        max-width: 80vw;
     }
 
     .zpawn .selfie {
