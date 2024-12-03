@@ -128,6 +128,8 @@
 @media only screen and (max-width: 600px) {
     #spawn {
         padding: unset;
+        height: auto;
+        min-height: fit-content;
     }
 
     .zpawn {

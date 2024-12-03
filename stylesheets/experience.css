@@ -101,6 +101,8 @@
     #experience
     {
         padding: unset;
+        height: auto;
+        min-height: fit-content;
     }
 
     .expert {
