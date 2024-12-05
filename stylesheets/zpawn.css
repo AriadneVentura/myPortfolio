@@ -22,11 +22,14 @@
     grid-template-columns: 2fr 1fr; /* Top left is twice as wide as top right */
     grid-template-rows: 1fr 6fr; /* Bottom cells are 6 times as tall as the top cells */
     gap: 10px; /* Space between cells */
-    left: 8vw;
-    top: 10vh;
-    position: absolute;
     color: var(--text-colour);
     font-size: 22px;
+}
+
+.zpawn > * {
+    left: 8vw;
+    top: 10vh;
+    position: relative;
 }
 
 .zpawn h2::after {

@@ -12,7 +12,7 @@
 }
 
 html, body {
-    scroll-behavior: smooth; !important;
+    scroll-behavior: smooth !important;
 }
 
 * {
@@ -68,7 +68,7 @@ body {
     width: 66vw;
     height: 65vh;
     left: 25vw;
-    top: 24vh;
+    top: 20vh;
     border: 15px solid var(--creations-border);
     outline: 2px solid var(--creations-outline);
     float: left;
@@ -136,7 +136,7 @@ footer div{
         width: 66vw;
         height: 65vh;
         left: 25vw;
-        top: 25vh;
+        top: 30vh;
     }
 }
 
@@ -183,6 +183,8 @@ footer div{
         top: unset;
         position: unset;
         right: unset;
+
+        justify-content: center;
     }
 
     #creations_box {
