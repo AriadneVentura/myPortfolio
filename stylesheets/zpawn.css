@@ -70,7 +70,6 @@
 
 .zpawn .logos {
     position: relative;
-    top: 2vh;
     display: flex;
     flex-direction: row;
     gap: 0.5vw;
@@ -118,12 +117,11 @@
 
     .zpawn .selfie {
         position: relative;
-        top: -2vh;
-        left: -3vw;
+        left: -7vw;
     }
 
     .zpawn .logos {
-        left: 2vw;
+        left: 6vw;
     }
 }
 
@@ -131,16 +129,18 @@
 @media only screen and (max-width: 600px) {
     #spawn {
         padding: unset;
-        height: auto;
-        min-height: fit-content;
     }
 
     .zpawn {
         display: flex;
         flex-direction: column;
+        gap: 10px;
+    }
+
+    .zpawn > * {
         left: unset;
         top: unset;
-        gap: 10px;
+        position: unset;
     }
 
     .zpawn h2::after {

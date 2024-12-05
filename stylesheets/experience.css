@@ -14,12 +14,7 @@
     left: 5vw;
     top: 10vh;
     position:relative;
-
 }
-
-/* .expert h2 {
-    top: 8vh;
-} */
 
 .expert h2::after {
     content: "";
@@ -112,17 +107,20 @@
     #experience
     {
         padding: unset;
-        height: auto;
-        min-height: fit-content;
     }
 
     .expert {
         /*position: relative;*/
         display: unset;
         flex-direction: unset;
+    }
+
+    .expert > * {
         left: unset;
         top: unset;
+        position: unset;
     }
+    
 
     .expert h2::after {
         content: none;
