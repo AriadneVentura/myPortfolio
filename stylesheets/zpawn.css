@@ -93,7 +93,6 @@
     font-family: "CardinalFruit", Serif;
     font-weight: bold;
     color: var(--nav-highlight-colour);
-    text-decoration: none;
     letter-spacing: .05em;
     transition: all .4s ease;
 }
@@ -129,6 +128,7 @@
 @media only screen and (max-width: 600px) {
     #spawn {
         padding: unset;
+        min-height: unset;
     }
 
     .zpawn {

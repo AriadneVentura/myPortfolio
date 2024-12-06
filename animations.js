@@ -1,4 +1,3 @@
-
 const reveal = () => {
     const reveals = document.querySelectorAll(".reveal");
 
@@ -22,17 +21,27 @@ const aestheticActivate = () => {
     text.innerText = "lighter";
 
 
-    document.querySelector("input[type=checkbox]").addEventListener("change", function() {
+    document.querySelector("input[type=checkbox]").addEventListener("change", function () {
         var image = document.getElementById('get-image');
+        var mail = document.getElementById('email');
+        var git = document.getElementById('git');
+        var linkedin = document.getElementById('linkedin');
+
         if (this.checked) {
             text.innerText = "darker";
             image.src = "thingies/aaiconL.png";
             document.querySelector('html').toggleAttribute('data-light-mode')
+            mail.src = "thingies/mail_icon.png";
+            git.src = "thingies/github_icon.png";
+            linkedin.src = "thingies/linkedin_icon.png";
 
         } else {
             text.innerText = "lighter";
             image.src = "thingies/aaicon.png";
             document.querySelector('html').toggleAttribute('data-light-mode')
+            mail.src = "thingies/mail_pink.png";
+            git.src = "thingies/github_pink.png";
+            linkedin.src = "thingies/linkedin_pink.png";
 
         }
     }, false);
@@ -50,7 +59,7 @@ const typing = () => {
 
     const handler = () => {
         // ALLOWED
-        if (direction > 0 ) {
+        if (direction > 0) {
             elem.innerText += names[idx][charIdx]
         } else {
             elem.innerText = elem.innerText.substring(0, elem.innerText.length - 1)

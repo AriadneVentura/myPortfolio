@@ -121,7 +121,20 @@ nav .navlist .links li:hover .words {
 
 /* TODO add phone */
 @media only screen and (max-width: 600px) {
-    nav {
+    nav a {
         display: none;
+    }
+
+    nav .navlist ol {
+        display: none;
+    }
+
+    .resume-button {
+        display: none;
+    }
+
+    nav {
+        position: relative;
+        top: 10vh;
     }
 }
