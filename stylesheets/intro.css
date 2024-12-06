@@ -1,4 +1,4 @@
-.wrapper{
+.wrapper {
     left: 35vw;
     top: 32vh;
     z-index: 5;
@@ -6,7 +6,7 @@
     position: absolute;
 }
 
-.wrapper .static-txt{
+.wrapper .static-txt {
     color: var(--intro-colour);
     font-size: 4.9rem;
     font-family: "CardinalFruit", Serif;
@@ -18,7 +18,7 @@
 
 }
 
-#lol::after{
+#lol::after {
     content: "";
     position: relative;
     display: inline-block;
@@ -36,7 +36,7 @@
 }
 
 .intro {
-    z-index:100;
+    z-index: 100;
     color: var(--intro-colour);
     margin-top: 90px;
     position: absolute;
@@ -70,7 +70,7 @@
 
 .description {
     font-size: 1.3rem;
-    font-family: "NTR",sans-serif;
+    font-family: "NTR", sans-serif;
     color: var(--desc-colour);
     display: block;
 
@@ -95,6 +95,7 @@
     .intro-wrap {
         padding: unset;
     }
+
     .intro-wrap .wrapper {
         text-align: center;
     }
@@ -127,11 +128,11 @@
 
     .description {
         font-size: 1rem;
-        font-family: "NTR",sans-serif;
+        font-family: "NTR", sans-serif;
         color: #c7c7c7;
     }
 
-    #lol::after{
+    #lol::after {
         top: 1vh;
         height: 3rem;
         border-left: 3px solid #F5C9F1;

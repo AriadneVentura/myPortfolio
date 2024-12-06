@@ -7,12 +7,11 @@ nav {
 }
 
 nav ol {
- list-style: none;
+    list-style: none;
 }
 
 nav .navlist .links li {
     font-size: 18px;
-    /*font-family: "CardinalFruit", Serif;*/
     padding-top: 20px;
 }
 
@@ -56,7 +55,6 @@ nav .navlist .links li:hover .words {
 }
 
 .navlist .aaicon {
-    /*float: left;*/
     width: 44px;
     height: 40px;
 
@@ -70,7 +68,6 @@ nav .navlist .links li:hover .words {
 }
 
 .navlist .aaicon:hover {
-    /*background-color: #F5C9F120;*/
     filter: grayscale(1);
     transition: all .4s ease;
     transform: scale(1.1);
@@ -92,12 +89,11 @@ nav .navlist .links li:hover .words {
     text-decoration: none;
     color: var(--nav-highlight-colour);
     font-size: 18px;
-    font-family: "NTR",sans-serif;
+    font-family: "NTR", sans-serif;
     letter-spacing: .05em;
 }
 
 .resume-button:hover {
-    /*the color is #F5C9F1 the 20 at the end refers to trasparency*/
     filter: grayscale(1);
     transition: all .4s ease;
     transform: scale(1.1);
@@ -123,7 +119,7 @@ nav .navlist .links li:hover .words {
     }
 }
 
-/*add 600*/
+/* TODO add phone */
 @media only screen and (max-width: 600px) {
     nav {
         display: none;

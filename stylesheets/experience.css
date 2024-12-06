@@ -3,9 +3,6 @@
 }
 
 .expert {
-    /* left: 8vw;
-    top: 8vh;
-    position:absolute; */
     color: var(--text-colour);
     font-size: 22px;
 }
@@ -13,7 +10,7 @@
 .expert > * {
     left: 5vw;
     top: 10vh;
-    position:relative;
+    position: relative;
 }
 
 .expert h2::after {
@@ -31,6 +28,7 @@
     font-size: 2.3rem;
     color: var(--intro-colour);
 }
+
 .content h3 a {
     text-decoration: none;
     color: var(--highlight-colour);
@@ -46,7 +44,7 @@
 
 .content h5 {
     font-size: 1rem;
-    font-family: "NTR",sans-serif;
+    font-family: "NTR", sans-serif;
     margin-bottom: 10px;
 }
 
@@ -59,7 +57,7 @@
 
 .content li {
     font-size: 1.3rem;
-    font-family: "NTR",sans-serif;
+    font-family: "NTR", sans-serif;
     max-width: 78%;
     margin-left: 40px;
     margin-bottom: 15px;
@@ -91,6 +89,7 @@
     .content h3 a {
         font-size: 2.3rem;
     }
+
     .content li {
         font-size: 1.1rem;
         max-width: 80%;
@@ -104,8 +103,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-    #experience
-    {
+    #experience {
         padding: unset;
     }
 
@@ -120,7 +118,7 @@
         top: unset;
         position: unset;
     }
-    
+
 
     .expert h2::after {
         content: none;
@@ -151,7 +149,7 @@
 
     .tools {
         display: grid;
-        grid-template-columns: repeat(2,minmax(150px,10px));
+        grid-template-columns: repeat(2, minmax(150px, 10px));
         column-gap: 10px;
     }
 
@@ -160,14 +158,3 @@
         text-align: center;
     }
 }
-
-/*dumb iphone specific styling */
-/*@media only screen and (max-width: 375px) {*/
-/*    .expert {*/
-/*        top: 22vh;*/
-/*    }*/
-
-/*    .expert h2::after {*/
-/*        margin-left: 175px;*/
-/*    }*/
-/*}*/

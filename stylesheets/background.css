@@ -105,7 +105,7 @@ footer {
     text-align: center;
 }
 
-footer div{
+footer div {
     font-family: "CardinalFruit", Serif;
     color: var(--heading);
     font-size: 16px;
@@ -164,7 +164,7 @@ footer div{
     #spawn_box {
         border: unset;
         outline: unset;
-        background-color:unset;
+        background-color: unset;
         width: unset;
         height: unset;
         left: unset;
@@ -176,7 +176,7 @@ footer div{
     #experience_box {
         border: unset;
         outline: unset;
-        background-color:unset;
+        background-color: unset;
         width: unset;
         height: unset;
         left: unset;
@@ -190,7 +190,7 @@ footer div{
     #creations_box {
         border: unset;
         outline: unset;
-        background-color:unset;
+        background-color: unset;
         width: unset;
         height: unset;
         left: unset;

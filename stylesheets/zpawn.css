@@ -151,7 +151,6 @@
 
     .zpawn .logos {
         gap: 10px;
-        /*position: relative;*/
         top: unset;
     }
 
@@ -165,16 +164,3 @@
         display: none;
     }
 }
-
-/*dumb iphone specific styling */
-/*@media only screen and (max-width: 375px) {*/
-/*    .zpawn {*/
-/*        !*top: 10vh;*!*/
-
-/*    }*/
-
-/*    .zpawn h2::after {*/
-/*        margin-top: -20px;*/
-/*        margin-left: 120px;*/
-/*    }*/
-/*}*/
