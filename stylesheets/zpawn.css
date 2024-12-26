@@ -23,7 +23,6 @@
     grid-template-rows: 1fr 6fr; /* Bottom cells are 6 times as tall as the top cells */
     gap: 10px; /* Space between cells */
     color: var(--text-colour);
-    font-size: 22px;
 }
 
 .zpawn > * {
@@ -43,19 +42,19 @@
 }
 
 .about p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-family: "NTR", sans-serif;
-    max-width: 80%;
+    max-width: 68%;
 }
 
 .zpawn img {
-    max-width: 18vw;
+    max-width: 15vw;
 }
 
 .zpawn .selfie {
     position: relative;
-    top: -5vw;
-    right: 6.5vw;
+    top: -4vw;
+    right: 7.5vw;
     transform: perspective(800px) scale(.8);
     transition: all .6s ease;
     box-shadow: 6px 13px 23px -5px rgba(0, 0, 0, .46);
@@ -73,6 +72,7 @@
     display: flex;
     flex-direction: row;
     gap: 0.5vw;
+    left: 5.5vw;
 }
 
 .zpawn .logos img {
@@ -89,7 +89,7 @@
 }
 
 .zpawn .about .special {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-family: "CardinalFruit", Serif;
     font-weight: bold;
     color: var(--nav-highlight-colour);
@@ -107,6 +107,7 @@
 @media only screen and (min-device-width: 1200px) and (max-width: 1600px) {
     .about p {
         font-size: 1.1rem;
+        max-width: 85%;
     }
 
     .zpawn h2::after {
@@ -116,7 +117,7 @@
 
     .zpawn .selfie {
         position: relative;
-        left: -7vw;
+        left: -5vw;
     }
 
     .zpawn .logos {

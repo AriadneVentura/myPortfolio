@@ -69,10 +69,11 @@
 }
 
 .description {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-family: "NTR", sans-serif;
     color: var(--desc-colour);
     display: block;
+    /*max-width: 95%;*/
 
 }
 

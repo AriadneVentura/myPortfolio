@@ -37,10 +37,10 @@ body {
     /*position: fixed*/
     position: absolute;
 
-    width: 66vw;
-    height: 82vh;
-    left: 27%;
-    top: 5vh;
+    width: 62vw;
+    height: 70vh;
+    left: 31%;
+    top: 10vh;
     border: 2px solid var(--spawn-border);
     outline: 12px solid var(--spawn-outline);
     float: left;
@@ -66,7 +66,7 @@ body {
     position: absolute;
 
     width: 66vw;
-    height: 65vh;
+    height: 72vh;
     left: 25vw;
     top: 20vh;
     border: 15px solid var(--creations-border);
@@ -125,18 +125,26 @@ footer div {
 
 /*laptop screen*/
 @media only screen and (min-device-width: 1200px)  and (max-width: 1600px) {
+    #spawn_box {
+        height: 78vh;
+    }
+
     #experience_box {
         width: 60vw;
         height: 83vh;
         left: 35vw;
-        top: 25vh;
+        top: 30vh;
     }
 
     #creations_box {
         width: 66vw;
         height: 65vh;
         left: 25vw;
-        top: 30vh;
+        top: 35vh;
+    }
+
+    footer {
+        top: 65vh;
     }
 }
 
@@ -232,3 +240,5 @@ footer div {
 /*TODO carousel w info*/
 /*TODO iphone styling*/
 /*TODO ipad styling*/
+/*TODO 27inch styling*/
+/*TODO julia set*/
