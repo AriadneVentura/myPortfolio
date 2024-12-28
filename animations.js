@@ -93,7 +93,6 @@ const activeIngredients = () => {
         sections.forEach((section) => {
             const sectionTop = section.offsetTop;
             if (scrollY >= sectionTop - 60) {
-                console.log(section)
                 current = section.getAttribute("id");
             }
         });
@@ -176,14 +175,30 @@ const carouselMovement = () => {
                 // Scroll to the end for the last image
                 scrollPosition = carousel.scrollWidth - carouselWidth;
             } else {
-                // Left edge of the current image
-                const currentX = images[index].offsetLeft;
-                // Width of the current image
+                // Get the bounding rectangle of the current image
+                const imageRect = images[index].getBoundingClientRect();
+                // Get the bounding rectangle of the projects container
+                const containerRect = carousel.getBoundingClientRect();
+                // Calculate the position of the image relative to the container
+                const currentX = imageRect.left - containerRect.left;
+
+                // Use a normalized scroll step based on the image's index and width
                 const imageWidth = images[index].offsetWidth;
-                // Calculate the center of the current image
-                // Note when the images are the same (horizontal) length, this works fine, if they differ, its buggy rip
-                const imageCenter = currentX + imageWidth / 2;
+                console.log(imageWidth)
+                const scrollStep = index * imageWidth; // Equal spacing for each image
+
+                // Use the scroll step to calculate the exact scroll position
+                const imageCenter = scrollStep + imageWidth / 2;
                 scrollPosition = imageCenter - boxWidth / 2;
+
+                // // // Left edge of the current image
+                // const currentX = images[index].offsetLeft;
+                // // Width of the current image
+                // const imageWidth = images[index].offsetWidth;
+                // // Calculate the center of the current image
+                // // Note when the images are the same (horizontal) length, this works fine, if they differ, its buggy rip
+                // const imageCenter = currentX + imageWidth / 2;
+                // scrollPosition = imageCenter - boxWidth / 2;
             }
 
             // // Apply the scroll position
@@ -195,16 +210,15 @@ const carouselMovement = () => {
 let display;
 const displayTitle = (image) => {
     // First click displays, next click hides.
-    console.log("here")
     const box = image.closest('.box');
     const title = box.querySelector('.title');
     const explanation = box.querySelector('.explanation');
+    const concepts = box.querySelector('.concepts');
     const languages = box.querySelector('.languages');
 
 
     // Check if the overlay already exists
     if (!display) {
-        console.log(1)
         // Dim the image further
         // Note: doing just image.filter.style, javascript adds the styles inline which overrides all other css rules
         // including hover. This way is way better
@@ -213,15 +227,16 @@ const displayTitle = (image) => {
         // Change their display styles
         title.classList.add("appear");
         explanation.classList.add("appear");
+        concepts.classList.add(("appear"));
         languages.classList.add("appear");
 
         display = true;
     } else {
         // Undo
-        console.log(2)
         image.classList.remove("darker");
         title.classList.remove("appear");
         explanation.classList.remove("appear");
+        concepts.classList.remove(("appear"));
         languages.classList.remove("appear");
         display = false;
     }
