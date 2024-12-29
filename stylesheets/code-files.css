@@ -137,4 +137,25 @@
     #creations {
         min-height: unset;
     }
+
+    /*.portfolio {*/
+    /*    position: absolute;*/
+    /*    height: 800%;*/
+    /*    width: 90%;*/
+    /*}*/
+    /*.portfolio h2 {*/
+    /*    right: unset;*/
+    /*}*/
+    /*.portfolio h2::after {*/
+    /*    content: none;*/
+    /*    width: unset;*/
+    /*    margin-left: unset;*/
+    /*}*/
+    /*.wrapThisAgain {*/
+    /*    height: 50%;*/
+    /*}*/
+    /*.pics {*/
+    /*    height: 50%;*/
+    /*}*/
+
 }

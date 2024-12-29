@@ -119,7 +119,6 @@ nav .navlist .links li:hover .words {
     }
 }
 
-/* TODO add phone */
 @media only screen and (max-width: 600px) {
     nav a {
         display: none;
