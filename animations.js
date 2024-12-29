@@ -171,9 +171,11 @@ const carouselMovement = () => {
             if (index === 0) {
                 // Scroll to the start for the first image
                 scrollPosition = 0;
+                console.log(images[index].offsetWidth)
             } else if (index === numImages - 1) {
                 // Scroll to the end for the last image
                 scrollPosition = carousel.scrollWidth - carouselWidth;
+                console.log(images[index].offsetWidth)
             } else {
                 // Get the bounding rectangle of the current image
                 const imageRect = images[index].getBoundingClientRect();
@@ -184,21 +186,14 @@ const carouselMovement = () => {
 
                 // Use a normalized scroll step based on the image's index and width
                 const imageWidth = images[index].offsetWidth;
-                console.log(imageWidth)
                 const scrollStep = index * imageWidth; // Equal spacing for each image
 
                 // Use the scroll step to calculate the exact scroll position
-                const imageCenter = scrollStep + imageWidth / 2;
-                scrollPosition = imageCenter - boxWidth / 2;
+                // const imageCenter = scrollStep + imageWidth / 2;
+                const imageCenter = imageRect.left - containerRect.left + imageRect.width / 2;
 
-                // // // Left edge of the current image
-                // const currentX = images[index].offsetLeft;
-                // // Width of the current image
-                // const imageWidth = images[index].offsetWidth;
-                // // Calculate the center of the current image
-                // // Note when the images are the same (horizontal) length, this works fine, if they differ, its buggy rip
-                // const imageCenter = currentX + imageWidth / 2;
-                // scrollPosition = imageCenter - boxWidth / 2;
+                // Floor this to stop jittering
+                scrollPosition = Math.floor(imageCenter - boxWidth / 2);
             }
 
             // // Apply the scroll position
