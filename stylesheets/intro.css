@@ -1,6 +1,6 @@
 .wrapper {
     left: 35vw;
-    top: 32vh;
+    top: 35vh;
     z-index: 5;
 
     position: absolute;
@@ -41,7 +41,7 @@
     margin-top: 90px;
     position: absolute;
     left: 35vw;
-    top: 30vh;
+    top: 35vh;
     max-width: 60%;
 
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
@@ -63,7 +63,7 @@
     }
 }
 
-.title {
+.quote {
     font-size: 1.8rem;
     font-family: "CardinalFruit", Serif;
 }
@@ -124,7 +124,7 @@
     }
 
     .quote {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
     }
 
     .description {

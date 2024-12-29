@@ -181,12 +181,6 @@ const carouselMovement = () => {
                 const imageRect = images[index].getBoundingClientRect();
                 // Get the bounding rectangle of the projects container
                 const containerRect = carousel.getBoundingClientRect();
-                // Calculate the position of the image relative to the container
-                const currentX = imageRect.left - containerRect.left;
-
-                // Use a normalized scroll step based on the image's index and width
-                const imageWidth = images[index].offsetWidth;
-                const scrollStep = index * imageWidth; // Equal spacing for each image
 
                 // Use the scroll step to calculate the exact scroll position
                 // const imageCenter = scrollStep + imageWidth / 2;
