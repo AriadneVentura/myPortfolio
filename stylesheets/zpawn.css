@@ -103,6 +103,19 @@
     transition: all .4s ease;
 }
 
+/*27-inch and + screens*/
+@media only screen and (min-device-width: 2560px) {
+    .zpawn img {
+        max-width: 13vw;
+    }
+
+    .zpawn .selfie {
+        position: relative;
+        left: -7vw;
+    }
+}
+
+
 /*laptop screen*/
 @media only screen and (min-device-width: 1200px) and (max-width: 1600px) {
     .about p {

@@ -99,6 +99,13 @@ nav .navlist .links li:hover .words {
     transform: scale(1.1);
 }
 
+/*27-inch and + screens*/
+@media only screen and (min-device-width: 2560px) {
+    .navlist .aaicon {
+        margin-bottom: 65px;
+    }
+}
+
 
 /*laptop screen*/
 @media only screen and (min-device-width: 1200px)  and (max-width: 1600px) {
