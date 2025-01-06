@@ -156,7 +156,6 @@ nav .navlist .links li:hover .words {
         -ms-animation: fadein 2s; /* Internet Explorer */
         -o-animation: fadein 2s; /* Opera < 12.1 */
         animation: fadein 2s;
-        /*margin: auto;*/
     }
 
     nav .aesthetic > * {

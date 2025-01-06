@@ -42,7 +42,6 @@
 }
 
 .box {
-    /*position: relative;*/
     /*To stop the borders dissapearing on brightness dimming*/
     border: 1px solid var(--borders-woo);
 }
@@ -120,6 +119,13 @@
 .languages {
     font-size: 0.8rem;
     color: #F5C9F1
+}
+
+/*27-inch and + screens*/
+@media only screen and (min-device-width: 2560px) {
+    #creations {
+        min-height: 70vh;
+    }
 }
 
 

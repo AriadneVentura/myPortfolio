@@ -1,5 +1,5 @@
 #experience {
-    min-height: 70vh;
+    min-height: 60vh;
 }
 
 .expert {
@@ -107,7 +107,6 @@
     }
 
     .expert {
-        /*position: relative;*/
         display: unset;
         flex-direction: unset;
     }
