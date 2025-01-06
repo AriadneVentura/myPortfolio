@@ -91,7 +91,7 @@
     /*This allows the .pics pointer events to go through*/
     pointer-events: none;
     font-weight: bold;
-    text-wrap: balance;
+    text-wrap: balancei;
 }
 
 .title, .explanation, .languages, .concepts {

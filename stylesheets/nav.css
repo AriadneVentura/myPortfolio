@@ -124,6 +124,10 @@ nav .navlist .links li:hover .words {
     nav .navlist .links li:hover .border {
         width: 2rem;
     }
+
+    .resume-button {
+        padding: 0.55rem 1rem;
+    }
 }
 
 @media only screen and (max-width: 600px) {
