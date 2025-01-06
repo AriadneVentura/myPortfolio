@@ -84,8 +84,9 @@
     max-width: 20px;
 }
 
-.zpawn .about-image .logos img:hover {
-    filter: grayscale(0.8);
+.zpawn .logos img:hover {
+    filter: grayscale(0.9);
+    transition: all .5s ease
 }
 
 .zpawn .about .special {
@@ -134,7 +135,7 @@
     }
 
     .zpawn .logos {
-        left: 6vw;
+        left: 7vw;
     }
 }
 
