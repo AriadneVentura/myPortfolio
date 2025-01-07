@@ -78,6 +78,20 @@
     color: var(--nav-highlight-colour);
 }
 
+/*27-inch and + screens*/
+@media only screen and (min-device-width: 2560px) {
+    #experience {
+        min-height: 60vh;
+        /*To make the nav better*/
+        top: -10vh;
+    }
+
+    .content li {
+        font-size: 1.2rem;
+    }
+}
+
+
 /*laptop screen*/
 @media only screen and (min-device-width: 1200px)  and (max-width: 1600px) {
     .content h3 {

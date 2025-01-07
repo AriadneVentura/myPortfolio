@@ -126,24 +126,16 @@ footer div {
 /*27-inch and + screens*/
 @media only screen and (min-device-width: 2560px) {
     #spawn_box {
-        top: 5vh;
         height: 65vh;
-        width: 55vw;
-        left: 35vw;
+        top: 25vh;
     }
 
     #experience_box {
-        width: 55vw;
-        height: 63vh;
-        left: 40vw;
-        top: 14vh;
+        top: 40vh;
     }
 
     #creations_box {
-        width: 66vw;
-        height: 65vh;
-        left: 25vw;
-        top: 5vh;
+        top: 20vh;
     }
 }
 

@@ -109,6 +109,12 @@
 
 /*27-inch and + screens*/
 @media only screen and (min-device-width: 2560px) {
+    #spawn {
+        min-height: 60vh;
+        /*To make the nav better, ik not optimal but my site my rules*/
+        top: -20vh;
+    }
+
     .zpawn img {
         max-width: 13vw;
     }
@@ -116,6 +122,10 @@
     .zpawn .selfie {
         position: relative;
         left: -7vw;
+    }
+
+    .about p {
+        font-size: 1.2rem;
     }
 }
 
