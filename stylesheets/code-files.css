@@ -121,6 +121,10 @@
     color: #F5C9F1
 }
 
+/*27-inch and + screens*/
+@media only screen and (min-device-width: 2560px) {
+}
+
 /*laptop screen*/
 @media only screen and (min-device-width: 1200px)  and (max-width: 1600px) {
 }

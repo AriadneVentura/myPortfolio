@@ -135,7 +135,8 @@ footer div {
     }
 
     #creations_box {
-        top: 20vh;
+        /*when this is 20 the border bottom dissapers lol*/
+        top: 19vh;
     }
 }
 
