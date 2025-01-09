@@ -16,7 +16,7 @@
 .expert h2::after {
     content: "";
     display: block;
-    width: 25vw;
+    width: 21vw;
     margin-top: -15px;
     height: 1px;
     margin-left: 190px;

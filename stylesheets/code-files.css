@@ -11,15 +11,16 @@
     top: 8vh;
 }
 
-.portfolio h2 {
-    right: 12vw;
+#creations_box h2 {
+    left: 4vw;
+    top: 7vh;
     position: absolute;
 }
 
-.portfolio h2::after {
+#creations_box h2::after {
     content: "";
     display: block;
-    width: 35vw;
+    width: 21vw;
     margin-top: -15px;
     height: 1px;
     margin-left: 170px;
@@ -90,7 +91,7 @@
     /*This allows the .pics pointer events to go through*/
     pointer-events: none;
     font-weight: bold;
-    text-wrap: balancei;
+    text-wrap: balance;
 }
 
 .title, .explanation, .languages, .concepts {
@@ -121,6 +122,19 @@
     color: #F5C9F1
 }
 
+.scroll-wrap {
+    display: none;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
 /*27-inch and + screens*/
 @media only screen and (min-device-width: 2560px) {
 }
@@ -131,32 +145,81 @@
 
 /*phone*/
 @media only screen and (max-width: 600px) {
-    .portfolio {
-        display: none;
+    .scroll-wrap {
+        display: unset;
+    }
+
+    .scroll {
+        position: absolute;
+        display: flex;
+        align-items: baseline;
+        column-gap: 1em;
+        pointer-events: none;
+        color: var(--text-colour);
+        top: 80px;
+        left: 0;
+    }
+
+    .text {
+        font-size: 1.1rem;
+        font-family: "Cardinal", serif;
+    }
+
+    .scroll .line {
+        position: relative;
+        width: 55px;
+        height: 1px;
+        background-color: rgba(var(--text-colour), 0.25);
+        overflow: hidden;
+    }
+
+    /*credit solani-illustration.xyz*/
+    .scroll .line::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: var(--text-colour);
+        animation-name: scroll;
+        animation-duration: 1.5s;
+        animation-timing-function: cubic-bezier(0.3, 0.1, 0.1, 1);
+        animation-iteration-count: infinite;
     }
 
     #creations {
         min-height: unset;
+        padding: unset;
     }
 
-    /*.portfolio {*/
-    /*    position: absolute;*/
-    /*    height: 800%;*/
-    /*    width: 90%;*/
-    /*}*/
-    /*.portfolio h2 {*/
-    /*    right: unset;*/
-    /*}*/
-    /*.portfolio h2::after {*/
-    /*    content: none;*/
-    /*    width: unset;*/
-    /*    margin-left: unset;*/
-    /*}*/
-    /*.wrapThisAgain {*/
-    /*    height: 50%;*/
-    /*}*/
-    /*.pics {*/
-    /*    height: 50%;*/
-    /*}*/
+    .portfolio {
+        position: unset;
+        width: 80vw;
+        height: 200px;
+    }
+
+    .wrapThisAgain {
+        position: unset;
+    }
+
+    #creations_box h2 {
+        position: unset;
+        right: unset;
+        margin-bottom: 50px;
+    }
+
+    #creations_box h2::after {
+        content: none;
+        width: unset;
+        margin-left: unset;
+    }
+
+    .projects {
+        height: 100%; /* Match the container's height */
+    }
+
+    .pics {
+        height: 100%; /* Match the carousel's height */
+        object-fit: cover; /* Ensure images fill their container */
+    }
 
 }
