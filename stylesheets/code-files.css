@@ -194,7 +194,7 @@
     .portfolio {
         position: unset;
         width: 80vw;
-        height: 200px;
+        height: 350px;
     }
 
     .wrapThisAgain {
@@ -213,13 +213,8 @@
         margin-left: unset;
     }
 
-    .projects {
-        height: 100%; /* Match the container's height */
-    }
-
     .pics {
-        height: 100%; /* Match the carousel's height */
-        object-fit: cover; /* Ensure images fill their container */
+        filter: unset;
     }
 
 }

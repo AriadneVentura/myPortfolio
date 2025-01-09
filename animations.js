@@ -196,6 +196,41 @@ const carouselMovement = () => {
     });
 }
 
+const mobileCarouselMovement = () => {
+    document.addEventListener('DOMContentLoaded', () => {
+        const carousel = document.querySelector('.projects'); // Carousel container
+
+        let isDragging = false; // Flag to track dragging state
+        let startX = 0; // Starting X coordinate of the touch
+        let scrollStartPosition = 0; // Starting scroll position of the carousel
+
+        // Touch start event
+        carousel.addEventListener('touchstart', (e) => {
+            isDragging = true;
+            startX = e.touches[0].pageX; // Record the starting X position
+            scrollStartPosition = carousel.scrollLeft; // Record the current scroll position
+            carousel.style.scrollBehavior = 'auto'; // Disable smooth scroll during dragging
+        });
+
+        // Touch move event
+        carousel.addEventListener('touchmove', (e) => {
+            if (!isDragging) return; // Ignore if not dragging
+
+            const currentX = e.touches[0].pageX; // Current X position
+            const deltaX = startX - currentX; // Calculate distance moved
+
+            // Scroll the carousel by the delta
+            carousel.scrollLeft = scrollStartPosition + deltaX;
+        });
+
+        // Touch end event
+        carousel.addEventListener('touchend', () => {
+            isDragging = false; // Reset dragging state
+            carousel.style.scrollBehavior = 'smooth'; // Re-enable smooth scroll after dragging
+        });
+    });
+};
+
 let display;
 const displayTitle = (image) => {
     // First click displays, next click hides.
