@@ -40,6 +40,7 @@ body {
     width: 62vw;
     height: 70vh;
     left: 31%;
+    top: 10vh;
     border: 2px solid var(--spawn-border);
     outline: 12px solid var(--spawn-outline);
     float: left;
@@ -53,7 +54,7 @@ body {
     width: 55vw;
     height: 80vh;
     left: 40vw;
-    top: 15vh;
+    top: 25vh;
     border: 15px solid var(--experience-border);
     outline: 1px solid var(--experience-outline);
 
@@ -67,7 +68,7 @@ body {
     width: 66vw;
     height: 72vh;
     left: 25vw;
-    top: 20vh;
+    top: 30vh;
     border: 15px solid var(--creations-border);
     outline: 2px solid var(--creations-outline);
     float: left;
@@ -126,21 +127,21 @@ footer div {
 @media only screen and (min-device-width: 2560px) {
     #spawn_box {
         height: 65vh;
-        top: 15vh;
+        top: 25vh;
     }
 
     #experience_box {
-        top: 30vh;
+        top: 40vh;
     }
 
     #creations_box {
         /*when bottom border dissapears -1 */
-        top: 10vh;
+        top: 19vh;
     }
 
-    footer {
-        top: 5vh;
-    }
+    /*footer {*/
+    /*    top: 5vh;*/
+    /*}*/
 }
 
 /*laptop screen*/
