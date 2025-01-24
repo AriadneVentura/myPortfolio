@@ -217,4 +217,9 @@
         filter: unset;
     }
 
+    .project-description {
+        /* Don't want to particularly style this ATM*/
+        pointer-events: unset;
+    }
+
 }

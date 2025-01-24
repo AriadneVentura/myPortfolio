@@ -180,6 +180,7 @@
     .zpawn .logos {
         gap: 10px;
         top: unset;
+        left: unset;
     }
 
     .about p {
