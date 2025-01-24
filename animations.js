@@ -198,26 +198,29 @@ const carouselMovement = () => {
 
 const mobileCarouselMovement = () => {
     document.addEventListener('DOMContentLoaded', () => {
-        const carousel = document.querySelector('.projects'); // Carousel container
+        const carousel = document.querySelector('.projects');
 
-        let isDragging = false; // Flag to track dragging state
-        let startX = 0; // Starting X coordinate of the touch
-        let scrollStartPosition = 0; // Starting scroll position of the carousel
+        let isDragging = false;
+        let startX = 0;
+        // Starting scroll position of the carousel
+        let scrollStartPosition = 0;
 
-        // Touch start event
         carousel.addEventListener('touchstart', (e) => {
             isDragging = true;
-            startX = e.touches[0].pageX; // Record the starting X position
-            scrollStartPosition = carousel.scrollLeft; // Record the current scroll position
-            carousel.style.scrollBehavior = 'auto'; // Disable smooth scroll during dragging
+            startX = e.touches[0].pageX;
+            // Record the current scroll position
+            scrollStartPosition = carousel.scrollLeft;
+            // Disable smooth scroll during dragging
+            carousel.style.scrollBehavior = 'auto';
         });
 
         // Touch move event
         carousel.addEventListener('touchmove', (e) => {
             if (!isDragging) return; // Ignore if not dragging
 
-            const currentX = e.touches[0].pageX; // Current X position
-            const deltaX = startX - currentX; // Calculate distance moved
+            const currentX = e.touches[0].pageX;
+            // Calculate distance moved
+            const deltaX = startX - currentX;
 
             // Scroll the carousel by the delta
             carousel.scrollLeft = scrollStartPosition + deltaX;
@@ -225,8 +228,9 @@ const mobileCarouselMovement = () => {
 
         // Touch end event
         carousel.addEventListener('touchend', () => {
-            isDragging = false; // Reset dragging state
-            carousel.style.scrollBehavior = 'smooth'; // Re-enable smooth scroll after dragging
+            isDragging = false;
+            // Re-enable smooth scroll after dragging
+            carousel.style.scrollBehavior = 'smooth';
         });
     });
 };

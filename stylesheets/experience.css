@@ -118,6 +118,7 @@
 @media only screen and (max-width: 600px) {
     #experience {
         padding: unset;
+        min-height: unset;
     }
 
     .expert {
