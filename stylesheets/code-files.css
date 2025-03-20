@@ -17,16 +17,6 @@
     position: absolute;
 }
 
-#creations_box h2::after {
-    content: "";
-    display: block;
-    width: 21vw;
-    margin-top: -15px;
-    height: 1px;
-    margin-left: 170px;
-    background-color: var(--after-heading);
-}
-
 .wrapThisAgain {
     position: relative;
     top: 10vh;
@@ -205,12 +195,6 @@
         position: unset;
         right: unset;
         margin-bottom: 50px;
-    }
-
-    #creations_box h2::after {
-        content: none;
-        width: unset;
-        margin-left: unset;
     }
 
     .pics {

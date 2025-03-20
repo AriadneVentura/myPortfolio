@@ -34,16 +34,6 @@
     position: relative;
 }
 
-.zpawn h2::after {
-    content: "";
-    display: block;
-    width: 21vw;
-    margin-top: -15px;
-    height: 1px;
-    margin-left: 130px;
-    background-color: var(--after-heading);;
-}
-
 .about p {
     font-size: 1.1rem;
     font-family: "NTR", sans-serif;
@@ -137,11 +127,6 @@
         max-width: 85%;
     }
 
-    .zpawn h2::after {
-        width: 24vw;
-        margin-top: -20px;
-    }
-
     .zpawn .selfie {
         position: relative;
         left: -5vw;
@@ -169,12 +154,6 @@
         left: unset;
         top: unset;
         position: unset;
-    }
-
-    .zpawn h2::after {
-        content: none;
-        width: unset;
-        margin-left: unset;
     }
 
     .zpawn .logos {
